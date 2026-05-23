@@ -1,0 +1,69 @@
+<?php 
+
+// Funções para Limpar o Header
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'start_post_rel_link', 10, 0);
+remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+remove_action('wp_head', 'feed_links_extra', 3);
+remove_action('wp_head', 'wp_generator');
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('admin_print_scripts', 'print_emoji_detection_script');
+remove_action('wp_print_styles', 'print_emoji_styles');
+remove_action('admin_print_styles', 'print_emoji_styles');
+
+add_theme_support('post-thumbnails');
+
+// Search AJAX
+function custom_ajax_search() {
+    wp_enqueue_script(
+        'ajax-search-script',
+        get_template_directory_uri() . '/js/ajax-search.js',
+        array('jquery'),
+        null,
+        true
+    );
+
+    wp_localize_script(
+        'ajax-search-script',
+        'ajaxSearch',
+        array(
+            'ajax_url' => admin_url('admin-ajax.php'),
+        )
+    );
+}
+add_action('wp_enqueue_scripts', 'custom_ajax_search');
+
+// Endpoint Registros de Placa
+function ajax_search_handler() {
+    // Verifica se a busca foi enviada
+    $search_query = isset($_POST['query']) ? sanitize_text_field($_POST['query']) : '';
+
+    // Configura a query de busca
+    $args = array(
+        'posts_per_page' => 200,
+        'post_type'      => 'post',
+        'order'          => 'DESC',
+        's'              => $search_query,
+    );
+
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            ?>
+            <?php include(TEMPLATEPATH .'/includes/thumb-posts.php')?>
+            <?php
+        }
+    } else {
+        echo '<p>Nenhum post encontrado.</p>';
+    }
+
+    wp_reset_postdata();
+    wp_die();
+}
+add_action('wp_ajax_ajax_search', 'ajax_search_handler');
+add_action('wp_ajax_nopriv_ajax_search', 'ajax_search_handler');
+
+?>

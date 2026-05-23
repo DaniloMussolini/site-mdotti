@@ -1,0 +1,434 @@
+<!DOCTYPE html><html
+lang=en><head>
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta
+name="MobileOptimized" content="width"><meta
+name="HandheldFriendly" content="true"><link
+rel=preconnect href=https://fonts.googleapis.com><link
+rel=preconnect href=https://fonts.gstatic.com crossorigin><link
+href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+rel=stylesheet><meta
+charset="UTF-8"><meta
+http-equiv="X-UA-Compatible" content="IE=edge"><meta
+name="viewport" content="width=device-width, initial-scale=1.0"><meta
+name="adopt-website-id" content="9c9e130e-6293-4b98-b671-786e9f445bf6"> <script src="//tag.goadopt.io/injector.js?website_code=9c9e130e-6293-4b98-b671-786e9f445bf6" 
+    class=adopt-injector></script> <link
+href=https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css rel=stylesheet><link
+rel=icon type=image/png href=https://mdotti.com/core/views/a9c5111cff/favicon.png><link
+rel=stylesheet href=https://unpkg.com/swiper@8/swiper-bundle.min.css><link
+href=https://unpkg.com/aos@2.3.1/dist/aos.css rel=stylesheet><link
+rel=stylesheet href=https://mdotti.com/core/views/a9c5111cff/css/main.min.css><title>
+Tecnologia |         MDotti</title> <script src=https://www.google.com/recaptcha/api.js async defer></script> <meta
+name='robots' content='max-image-preview:large'><link
+rel=dns-prefetch href=//www.googletagmanager.com><style id=wp-img-auto-sizes-contain-inline-css>img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */</style> <script id=jquery-core-js src="https://mdotti.com/lib/js/jquery/jquery.min.js?rnd=20232"></script> <script id=jquery-migrate-js src="https://mdotti.com/lib/js/jquery/jquery-migrate.min.js?rnd=20232"></script> <script id=google_gtagjs-js src="https://www.googletagmanager.com/gtag/js?id=GT-TNLB2GBJ" async></script> <script id=google_gtagjs-js-after>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["mdotti.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-TNLB2GBJ");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after</script> <meta
+name="google-site-verification" content="_vSLARRSbhG_Cmd3AR_XLYKPa9-Y3ewx1mfvG2bp2Xc"> <script>( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-WMBNVN5R' );</script> <style id=wp-block-heading-inline-css>h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://mdotti.com/lib/blocks/heading/style.min.css */</style><style id=wp-block-paragraph-inline-css>.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://mdotti.com/lib/blocks/paragraph/style.min.css */</style></head><body
+class="archive paged category category-tecnologia category-5 paged-2 category-paged-2 wp-theme-mdotti"><header><div
+class=container><div
+class=logo>
+<a
+href=https://mdotti.com>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/logo.svg alt="Logo MDotti">
+</a></div><div
+class=menu><ul>
+<li>
+<a
+href=https://mdotti.com/#sobre>Sobre nós</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#produtos>Produtos e Serviços</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/blog>Blog</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#contato>Contato</a>
+</li></ul></div>
+<button
+class=btn-open-menu id=js-btn-menu-mobile>
+<span></span>
+<span></span>
+<span></span>
+</button></div></header><div
+class=menu-responsive><div
+class=overlay></div><aside><div
+class=content><div
+class=logo>
+<a
+href=index.html>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/logo-white.png alt="Logo M.Dotti">
+</a></div><div
+class=big-menu><ul><h4>Menu</h4>
+<li>
+<a
+href=https://mdotti.com/#sobre>Sobre nós</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#produtos>Produtos e Serviços</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/blog>Blog</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#contato>Contato</a>
+</li></ul></div><div
+class=small-menu><ul><h4>Informações</h4>
+<li>
+<a
+href=https://mdotti.com/politica/ >Política de Privacidade</a>
+</li></ul></div></div></aside></div><section
+class="s-blog s-blog-page"><main
+class=container-full><div
+class=slide-blog><div
+class=swiper-slide><div
+class=slide-post style="background-image: url(https://mdotti.com/storage/2026/05/MDotti-edit-in-place.png);"><div
+class=container><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/entenda-como-o-modelo-edit-in-place-transforma-o-workflow-audiovisual-com-mais-produtividade-seguranca-colaboracao-e-controle-de-versoes/ ><h3>Entenda como o modelo edit in place transforma o workflow audiovisual com mais produtividade, segurança, colaboração e controle de versões.</h3>
+</a><p>Com a evolução das infraestruturas de armazenamento e rede, surgiu um novo modelo de produção audiovisual: o edit in place.</p></div></div></div></div></div></main></section><section
+class=s-news><main
+class=container-full><video
+src=https://mdotti.com/core/views/a9c5111cff/video/bg-mdotti-hero.mp4 autoplay loop playsinline muted></video><div
+class=container><div
+class=text><div
+class=icon data-aos=zoom-in>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-send.svg alt=Send></div><h5>Tudo o que você precisa saber sobre tecnologia no audiovisual, toda semana, na sua caixa de entrada.</h5><p>Cadastre-se na nossa newsletter e receba conteúdo exclusivo sobre workflow de vídeo, tecnologias em armazenamento, infraestrutura e workstations customizadas.</p></div><div
+class=news><form
+action=https://mdotti.com/core/views/a9c5111cff/mail/email-news.php method=POST><div
+class=group>
+<input
+type=text placeholder=Nome name=name-news required></div><div
+class=group>
+<input
+type=text placeholder="Digite seu melhor e-mail" name=mail-news required></div><div
+class=g-recaptcha data-sitekey=6Lf6oEYrAAAAAJvBxQvuJoOYqM_2eWi03PNc2yv1 data-action=LOGIN></div>
+<button
+id=send class="btn-primary purple">Enviar</button></form></div></div></main></section><section
+class=s-category><div
+class=container><div
+class="swiper slide-category"><div
+class=swiper-wrapper><div
+class=swiper-slide>
+<a
+href=https://mdotti.com/category/adobe-premiere/ class=box-category><div
+class=icon>
+<img
+src=https://mdotti.com/storage/2025/03/icon-portfolio.svg alt=Adobe></div>
+<strong>Adobe</strong>
+</a></div><div
+class=swiper-slide>
+<a
+href=https://mdotti.com/category/cases-de-sucesso/ class=box-category><div
+class=icon>
+<img
+src=https://mdotti.com/storage/2025/03/icon-star.svg alt=Cases></div>
+<strong>Cases</strong>
+</a></div><div
+class=swiper-slide>
+<a
+href=https://mdotti.com/category/curiosidade/ class=box-category><div
+class=icon>
+<img
+src=https://mdotti.com/storage/2025/10/icon-curiosidades.svg alt=Curiosidade></div>
+<strong>Curiosidade</strong>
+</a></div><div
+class=swiper-slide>
+<a
+href=https://mdotti.com/category/tecnologia/ class=box-category><div
+class=icon>
+<img
+src=https://mdotti.com/storage/2025/03/icon-chip.svg alt=Tecnologia></div>
+<strong>Tecnologia</strong>
+</a></div></div></div></div></section><section
+class=s-news-list><div
+class=container><div
+class=top><div
+class=title><h2>Tecnologia</h2><p>Acompanhe abaixo as últimas notícias de Tecnologia.</p></div></div><div
+class=group-more-news id=search-results><div
+class="thumb-news thumb-news-page"><div
+class=photo>
+<a
+href=https://mdotti.com/solucao-flexivel-e-profissional-de-ingest-de-video-conheca-o-cinegy-capture-pro/ >
+<img
+src=https://mdotti.com/storage/2025/06/Capa-para-blog-MDotti-6-1.png alt="Solução Flexível e Profissional de Ingest de Vídeo: Conheça o Cinegy Capture Pro">
+</a></div><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/solucao-flexivel-e-profissional-de-ingest-de-video-conheca-o-cinegy-capture-pro/ ><h3>Solução Flexível e Profissional de Ingest de Vídeo: Conheça o Cinegy Capture Pro</h3>
+</a><p>No universo da produção audiovisual, capturar sinais de vídeo com segurança, qualidade e flexibilidade é essencial. Para isso, ferramentas de...</p></div></div><div
+class="thumb-news thumb-news-page"><div
+class=photo>
+<a
+href=https://mdotti.com/sensor-12k-da-blackmagic-e-agora-como-fica-a-pos-producao/ >
+<img
+src=https://mdotti.com/storage/2025/06/Capa-para-blog-MDotti-5.png alt="Sensor 12K da Blackmagic">
+</a></div><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/sensor-12k-da-blackmagic-e-agora-como-fica-a-pos-producao/ ><h3>Sensor 12K da Blackmagic</h3>
+</a><p>Sensor 12K da Blackmagic: um salto na imagem, e um teste para sua pós-produção Na última NAB Show, a Blackmagic...</p></div></div><div
+class="thumb-news thumb-news-page"><div
+class=photo>
+<a
+href=https://mdotti.com/o-mito-da-rede-10gb-ela-realmente-resolve-seus-gargalos/ >
+<img
+src=https://mdotti.com/storage/2025/05/Capa-para-blog-MDotti-4-1.png alt="O mito da rede 10 Gigabit: ela realmente resolve seus gargalos?">
+</a></div><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/o-mito-da-rede-10gb-ela-realmente-resolve-seus-gargalos/ ><h3>O mito da rede 10 Gigabit: ela realmente resolve seus gargalos?</h3>
+</a><p>Você acredita que investir em uma rede 10Gb vai automaticamente turbinar a performance da sua produção? A promessa pode parecer...</p></div></div><div
+class="thumb-news thumb-news-page"><div
+class=photo>
+<a
+href=https://mdotti.com/aniversario-mdotti-15-anos/ >
+<img
+src=https://mdotti.com/storage/2025/01/blog10.jpg alt="Campanha de Aniversário MDotti Tecnologia: Promoções Imperdíveis para Celebrar Conosco!">
+</a></div><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/aniversario-mdotti-15-anos/ ><h3>Campanha de Aniversário MDotti Tecnologia: Promoções Imperdíveis para Celebrar Conosco!</h3>
+</a><p>Campanha de Aniversário MDotti Tecnologia: Promoções Imperdíveis para Celebrar Conosco!  Estamos em festa! A MDotti Tecnologia está comemorando mais um...</p></div></div><div
+class="thumb-news thumb-news-page"><div
+class=photo>
+<a
+href=https://mdotti.com/sistema-de-monitoramento-embarcado/ >
+<img
+src=https://mdotti.com/storage/2025/01/blog06.jpg alt="ZBoox &#8211; Sistema de monitoramento embarcado">
+</a></div><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/sistema-de-monitoramento-embarcado/ ><h3>ZBoox &#8211; Sistema de monitoramento embarcado</h3>
+</a><p>Foco na criação No coração de cada projeto audiovisual, há uma centelha de criatividade que precisa de proteção contra os...</p></div></div><div
+class="thumb-news thumb-news-page"><div
+class=photo>
+<a
+href=https://mdotti.com/protegendo-se-contra-ataques-ransomware-prevencao-e-recuperacao/ >
+<img
+src=https://mdotti.com/storage/2025/01/blog08.jpg alt="A Importância de um Servidor de Armazenamento">
+</a></div><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/protegendo-se-contra-ataques-ransomware-prevencao-e-recuperacao/ ><h3>A Importância de um Servidor de Armazenamento</h3>
+</a><p>A Importância de um Servidor de Armazenamento Robusto na Produção Audiovisual    No universo da produção audiovisual, a qualidade do conteúdo...</p></div></div><div
+class="thumb-news thumb-news-page"><div
+class=photo>
+<a
+href=https://mdotti.com/protegendo-contra-ataques-ransomware/ >
+<img
+src=https://mdotti.com/storage/2025/01/blog09.jpg alt="Protegendo-se Contra Ataques Ransomware: Prevenção e Recuperação">
+</a></div><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/protegendo-contra-ataques-ransomware/ ><h3>Protegendo-se Contra Ataques Ransomware: Prevenção e Recuperação</h3>
+</a><p>Protegendo-se Contra Ataques Ransomware: Prevenção e Recuperação Nos dias de hoje, os ataques de ransomware tornaram-se uma ameaça crescente para indivíduos...</p></div></div><div
+class="thumb-news thumb-news-page"><div
+class=photo>
+<a
+href=https://mdotti.com/desvendando-o-misterio-ssd-vs-hdd-qual-e-a-melhor-escolha-para-voce/ >
+<img
+src=https://mdotti.com/storage/2025/01/blog04.jpg alt="Desvendando o Mistério: SSD vs. HDD &#8211; Qual é a Melhor Escolha para Você?">
+</a></div><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/desvendando-o-misterio-ssd-vs-hdd-qual-e-a-melhor-escolha-para-voce/ ><h3>Desvendando o Mistério: SSD vs. HDD &#8211; Qual é a Melhor Escolha para Você?</h3>
+</a><p>Você já se perguntou sobre a diferença entre um SSD e um HDD e qual é a melhor opção para...</p></div></div><div
+class="thumb-news thumb-news-page"><div
+class=photo>
+<a
+href=https://mdotti.com/backup-armazenamento-fila-lto-storage/ >
+<img
+src=https://mdotti.com/storage/2025/01/blog05.jpg alt="A Importância do Arquivamento em Fitas LTO: Preservando Seus Dados com Segurança e Eficiência">
+</a></div><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/backup-armazenamento-fila-lto-storage/ ><h3>A Importância do Arquivamento em Fitas LTO: Preservando Seus Dados com Segurança e Eficiência</h3>
+</a><p>A Importância do Arquivamento em Fitas LTO: Preservando Seus Dados com Segurança e Eficiência Na era digital, onde a quantidade...</p></div></div><div
+class="thumb-news thumb-news-page"><div
+class=photo>
+<a
+href=https://mdotti.com/o-que-e-redundancia-e-por-que-ela-e-tao-importante/ >
+<img
+src=https://mdotti.com/storage/2025/01/blog07.jpg alt="Locação vs Compra de Equipamentos de TI na Produção Gráfica e Edição de Vídeo: Uma Análise Detalhada">
+</a></div><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/o-que-e-redundancia-e-por-que-ela-e-tao-importante/ ><h3>Locação vs Compra de Equipamentos de TI na Produção Gráfica e Edição de Vídeo: Uma Análise Detalhada</h3>
+</a><p>Na indústria de produção gráfica e edição de vídeo, a escolha entre locar ou comprar equipamentos de TI é uma...</p></div></div><div
+class="thumb-news thumb-news-page"><div
+class=photo>
+<a
+href=https://mdotti.com/redundancia/ >
+<img
+src=https://mdotti.com/storage/2025/01/blog01.jpg alt="O que é redundância e por que ela é tão importante?">
+</a></div><div
+class=caption><div
+class=category-mdotti><ul>
+<li><a
+href=https://mdotti.com/category/tecnologia/ >Tecnologia</a></li></ul></div>
+<a
+href=https://mdotti.com/redundancia/ ><h3>O que é redundância e por que ela é tão importante?</h3>
+</a><p>Redundância, no contexto da TI, significa a duplicação de componentes para garantir serviço ininterrupto e evitar perda de dados. Ela...</p></div></div></div><div
+class=controls><div
+class=pagination><ul
+class=page-numbers>
+<li><a
+class="prev page-numbers" href=https://mdotti.com/category/tecnologia/ ><img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-angle-left.svg alt=Previous></a></li>
+<li><a
+class=page-numbers href=https://mdotti.com/category/tecnologia/ >1</a></li>
+<li><span
+aria-current=page class="page-numbers current">2</span></li></ul></div></div></div></section><div
+class=wpp>
+<a
+target=_blank href="https://api.whatsapp.com/send/?phone=%2B5511988665683">
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-wpp.svg alt=WhatsApp>
+</a></div><footer><main
+class=container-full><div
+class=container><div
+class=main-foot><div
+class=info><div
+class=logo>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/logo-mdotti-white.svg alt="Logo MDotti White"></div><p
+style="margin-bottom: 32px">A MDotti Tecnologia combina expertise em TI e audiovisual para oferecer soluções acessíveis e completas, atendendo desde produtores independentes até grandes produções. Nossa missão é simplificar e democratizar a tecnologia para o mercado de pré e pós-produção.</p>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/selo-seagate-reseller.png alt></div><div
+class=group-col><div
+class=col><h5>Sitemap</h5><ul>
+<li>
+<a
+href=https://mdotti.com/#sobre>Sobre Nós</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#produtos>Produtos</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/blog>Blog</a>
+</li></ul></div><div
+class=col><h5>Informações</h5><ul>
+<li>
+<a
+href=https://mdotti.com/politica>Política</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#contato>Contato</a>
+</li></ul></div><div
+class="col contact"><h5>Contato</h5><ul>
+<li>
+<a
+href=#>Rua Milton Lodetti, 44 - Vila Leopoldina,<br> São Paulo - SP, 05303-080</a>
+</li>
+<li>
+<a
+href=#>+55 (11) 98866-5683</a>
+</li>
+<li>
+<a
+href=#>contato@mdotti.com</a>
+</li></ul></div></div></div><div
+class=copy><div
+class=rights>
+<a
+target=_blank href=https://mvmt.com.br>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-mvmt.svg alt="Website by mvmt.com.br">
+</a><div
+class=content>
+<strong>©2026 MDotti.</strong>
+<span>Todos os direitos reservados.</span></div></div><div
+class=social><ul>
+<li>
+<a
+target=_blank href=https://www.facebook.com/mdottitecnologia>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-fb.svg alt=Facebook>
+</a>
+</li>
+<li>
+<a
+target=_blank href=https://www.linkedin.com/company/mdotti-tecnologia/ >
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-linkedin.svg alt=Linkedin>
+</a>
+</li>
+<li>
+<a
+target=_blank href=https://www.instagram.com/mdottitec/ >
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-instagram.svg alt=Instagram>
+</a>
+</li></ul></div></div></div></main></footer> <script src=https://unpkg.com/swiper@8/swiper-bundle.min.js></script> <script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script> <script src=https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js></script> <script>// inicializar aos animate
+    AOS.init({
+        duration: 1000,
+        once: true
+    });</script> <script src=https://mdotti.com/core/views/a9c5111cff/js/script.js></script> <script src=https://mdotti.com/core/views/a9c5111cff/js/slides.js></script> <script type=speculationrules>{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/mdotti/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script> <noscript>
+<iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-WMBNVN5R" height=0 width=0 style=display:none;visibility:hidden></iframe>
+</noscript> <script id=ajax-search-script-js-extra>var ajaxSearch = {"ajax_url":"https://mdotti.com/dash/admin-ajax.php"};
+//# sourceURL=ajax-search-script-js-extra</script> <script id=ajax-search-script-js src=https://mdotti.com/core/views/a9c5111cff/js/ajax-search.js></script> </body></html>

@@ -1,0 +1,32 @@
+.cta {
+  display: flex;
+}
+
+.btn-primary {
+  @include flex(row, center, center);
+  width: 28rem;
+  height: 5.6rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-family: "Host Grotesk";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 100%;
+  transition: all 0.3s;
+
+  &.purple {
+    background: #735ee0;
+    color: #fff;
+
+    &:hover {
+      background-color: #1f1c30;
+    }
+  }
+
+  @include responsive(520px) {
+    width: auto;
+    height: 5rem;
+    font-size: 1.7rem;
+    padding: 0 4rem;
+  }
+}

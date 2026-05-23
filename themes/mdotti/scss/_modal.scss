@@ -1,0 +1,179 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  @include flex(row, center, center);
+
+  &.modal-out {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 39, 44, 0.95);
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+  }
+
+  .box {
+    position: relative;
+    max-width: 57.1rem;
+    width: 95%;
+    background-color: #121e29;
+    border-radius: 1rem;
+    padding: 4rem 4.8rem;
+
+    .head {
+      margin-bottom: 3.2rem;
+      @include flex(row, center, space-between);
+
+      .btn-modal-close {
+        background: rgba(255, 255, 255, 0.07);
+        width: 3.8rem;
+        height: 3.8rem;
+        border-radius: 50rem;
+        transition: all 0.5s;
+        @include flex(row, center, center);
+
+        img {
+          max-width: 2rem;
+          width: 100%;
+          transform: rotate(45deg);
+        }
+
+        &:hover {
+          background-color: rgba(81, 185, 156, 0);
+        }
+      }
+    }
+
+    p {
+      text-align: justify;
+      font-size: 1.4rem;
+      line-height: 150%;
+      margin-top: 3.2rem;
+
+      a {
+        color: #bfe0e5;
+        font-weight: 700;
+      }
+    }
+
+    form {
+      .group {
+        &:not(:last-child) {
+          margin-bottom: 3.2rem;
+        }
+
+        label {
+          color: #bfe0e5;
+          font-size: 1.2rem;
+          font-weight: 500;
+          line-height: 110%;
+          /* 1.32rem */
+          text-transform: uppercase;
+          display: block;
+          margin-bottom: 1.6rem;
+        }
+
+        input {
+          width: 100%;
+          height: 5.6rem;
+          padding: 0rem 2.4rem;
+          border-radius: 14rem;
+          border: 1px solid #11363d;
+          background: none;
+          color: #fff;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 110%;
+
+          &::placeholder {
+            color: rgba(191, 224, 229, 0.4);
+          }
+
+          &:focus {
+            border-color: rgba(106, 89, 167, 0.6);
+          }
+        }
+      }
+
+      .cta {
+        width: 100%;
+
+        button {
+          height: 5.6rem;
+          width: 100%;
+          font-size: 1.6rem;
+          line-height: 100%;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  @include responsive(1400px) {
+    align-items: flex-start;
+    overflow: auto;
+    padding: 2.4rem 0;
+  }
+
+  @include responsive(520px) {
+    padding: 1.6rem 0;
+
+    .box {
+      padding: 2.4rem 2.4rem;
+
+      .head {
+        .btn-modal-close {
+          width: 3.2rem;
+          height: 3.2rem;
+        }
+      }
+
+      form {
+        .group {
+          &:not(:last-child) {
+            margin-bottom: 2.4rem;
+          }
+
+          input {
+            height: 4.8rem;
+            padding: 0rem 1.6rem;
+          }
+        }
+
+        .cta {
+          button {
+            height: 4.8rem;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

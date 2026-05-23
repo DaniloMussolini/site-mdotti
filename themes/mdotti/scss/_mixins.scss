@@ -1,0 +1,20 @@
+// mixing flex - Direção / Alinhamento / Justificação -> Variavel
+@mixin flex($direction, $align, $justfy) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justfy;
+}
+
+// mixing responsive - Tamanho da tela -> Variavel
+@mixin responsive($screenWidth) {
+  @media (max-width: $screenWidth) {
+    @content;
+  }
+}
+
+@mixin grid($col, $gap) {
+  display: grid;
+  grid-template-columns: repeat($col, 1fr);
+  grid-gap: $gap;
+}

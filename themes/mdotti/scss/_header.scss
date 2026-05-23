@@ -1,0 +1,339 @@
+.menu-responsive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    background: rgba(31, 28, 48, 0.9);
+  }
+
+  aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    transition: all 0.7s;
+    backdrop-filter: blur(2rem);
+    background: #1f1c30;
+    padding: 4rem;
+    transform: translateX(-100%);
+    @include flex(column, flex-start, center);
+
+    h4 {
+      color: #735ee0;
+      display: block;
+      font-size: 1.4rem;
+      line-height: 100%;
+      margin-bottom: 3.2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      @include flex(column, flex-start, space-between);
+
+      .big-menu {
+        width: 100%;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        transition-delay: 0.5s;
+
+        ul {
+          li {
+            &:not(:last-child) {
+              margin-bottom: 2.4rem;
+            }
+
+            a {
+              font-size: 2.4rem;
+              color: #fff;
+              font-weight: 400;
+              line-height: 100%;
+              position: relative;
+              transition: all 0.3s;
+              text-transform: uppercase;
+
+              &:hover {
+                color: #735ee0;
+
+                &::before {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .small-menu {
+        width: 100%;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        transition-delay: 1s;
+
+        ul {
+          li {
+            &:not(:last-child) {
+              margin-bottom: 1.6rem;
+            }
+
+            a {
+              font-size: 1.6rem;
+              color: #fff;
+              font-weight: 400;
+              line-height: 100%;
+              position: relative;
+              transition: all 0.3s;
+              text-transform: uppercase;
+
+              &:hover {
+                color: #735ee0;
+
+                &::before {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .logo {
+        max-width: 14rem;
+      }
+    }
+  }
+
+  @include responsive(991px) {
+    aside {
+      h4 {
+        font-size: 1.2rem;
+        margin-bottom: 2.4rem;
+      }
+
+      .content {
+        .big-menu {
+          ul {
+            li {
+              a {
+                font-size: 2.4rem;
+              }
+            }
+          }
+        }
+
+        .small-menu {
+          ul {
+            li {
+              a {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(520px) {
+    aside {
+      width: 80%;
+      padding: 3.2rem;
+
+      .content {
+        .big-menu {
+          ul {
+            li {
+              a {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+
+        .small-menu {
+          ul {
+            li {
+              a {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+
+        .logo {
+          max-width: 12rem;
+        }
+      }
+    }
+  }
+}
+
+.menu-opened {
+  overflow: hidden;
+
+  .menu-responsive {
+    opacity: 1;
+    pointer-events: all;
+
+    aside {
+      transform: translateX(0%);
+
+      .content {
+
+        .big-menu,
+        .small-menu {
+          transform: translateY(0%);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+header {
+  padding-top: 3.2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+
+  .container {
+    @include flex(row, center, space-between);
+
+    .menu {
+      ul {
+        @include flex(row, center, flex-end);
+        gap: 1.6rem;
+
+        li {
+          a {
+            font-family: "Host Grotesk";
+            color: #8a9d98;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 100%;
+            text-transform: uppercase;
+            padding: 0.8rem 1rem;
+            border-radius: 14rem;
+            display: flex;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+
+            &:hover {
+              border-color: #1f1c30;
+              color: #1f1c30;
+            }
+          }
+        }
+      }
+    }
+
+    .btn-open-menu {
+      display: none;
+    }
+  }
+
+  @include responsive(991px) {
+    padding-top: 2.4rem;
+
+    .container {
+      .logo {
+        max-width: 14rem;
+      }
+
+      .menu {
+        ul {
+          gap: 0.8rem;
+
+          li {
+            a {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(768px) {
+    padding-top: 2.4rem;
+
+    .container {
+      .logo {
+        max-width: 14rem;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .btn-open-menu {
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #735ee0;
+        @include flex(column, center, center);
+        gap: 0.4rem;
+        border-radius: 0.5rem;
+
+        &:hover {
+          background-color: #1f1c30;
+        }
+
+        span {
+          width: 1.6rem;
+          height: 1px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  @include responsive(520px) {
+    padding-top: 1.6rem;
+
+    .container {
+      .logo {
+        max-width: 12rem;
+      }
+
+      .btn-open-menu {
+        width: 3.2rem;
+        height: 3.2rem;
+        background-color: #735ee0;
+      }
+    }
+  }
+}
+
+.page-template-page-zboox,
+.page-template-page-success,
+.error404 {
+  header {
+    position: relative;
+    padding: 3.2rem 0;
+  }
+
+  @include responsive(991px) {
+    header {
+      padding: 2.4rem 0;
+    }
+  }
+
+  @include responsive(520px) {
+    header {
+      padding: 1.6rem 0;
+    }
+  }
+}

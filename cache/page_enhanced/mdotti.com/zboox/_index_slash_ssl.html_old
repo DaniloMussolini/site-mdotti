@@ -1,0 +1,589 @@
+<!DOCTYPE html><html
+lang=en><head>
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta
+name="MobileOptimized" content="width"><meta
+name="HandheldFriendly" content="true"><link
+rel=preconnect href=https://fonts.googleapis.com><link
+rel=preconnect href=https://fonts.gstatic.com crossorigin><link
+href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+rel=stylesheet><meta
+charset="UTF-8"><meta
+http-equiv="X-UA-Compatible" content="IE=edge"><meta
+name="viewport" content="width=device-width, initial-scale=1.0"><meta
+name="adopt-website-id" content="9c9e130e-6293-4b98-b671-786e9f445bf6"> <script src="//tag.goadopt.io/injector.js?website_code=9c9e130e-6293-4b98-b671-786e9f445bf6" 
+    class=adopt-injector></script> <link
+href=https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css rel=stylesheet><link
+rel=icon type=image/png href=https://mdotti.com/core/views/a9c5111cff/favicon.png><link
+rel=stylesheet href=https://unpkg.com/swiper@8/swiper-bundle.min.css><link
+href=https://unpkg.com/aos@2.3.1/dist/aos.css rel=stylesheet><link
+rel=stylesheet href=https://mdotti.com/core/views/a9c5111cff/css/main.min.css><title>
+ZBoox |         MDotti</title> <script src=https://www.google.com/recaptcha/api.js async defer></script> <meta
+name='robots' content='max-image-preview:large'><link
+rel=dns-prefetch href=//www.googletagmanager.com><link
+rel=alternate title="oEmbed (JSON)" type=application/json+oembed href="https://mdotti.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmdotti.com%2Fzboox%2F"><link
+rel=alternate title="oEmbed (XML)" type=text/xml+oembed href="https://mdotti.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmdotti.com%2Fzboox%2F&#038;format=xml"><style id=wp-img-auto-sizes-contain-inline-css>img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */</style> <script id=jquery-core-js src="https://mdotti.com/lib/js/jquery/jquery.min.js?rnd=20232"></script> <script id=jquery-migrate-js src="https://mdotti.com/lib/js/jquery/jquery-migrate.min.js?rnd=20232"></script> <script id=google_gtagjs-js src="https://www.googletagmanager.com/gtag/js?id=GT-TNLB2GBJ" async></script> <script id=google_gtagjs-js-after>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["mdotti.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-TNLB2GBJ");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after</script> <link
+rel=canonical href=https://mdotti.com/zboox/ ><link
+rel=shortlink href='https://mdotti.com/?p=410'><meta
+name="google-site-verification" content="_vSLARRSbhG_Cmd3AR_XLYKPa9-Y3ewx1mfvG2bp2Xc"> <script>( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-WMBNVN5R' );</script> </head><body
+class="wp-singular page-template page-template-page-zboox page-template-page-zboox-php page page-id-410 wp-theme-mdotti"><header><div
+class=container><div
+class=logo>
+<a
+href=https://mdotti.com>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/logo.svg alt="Logo MDotti">
+</a></div><div
+class=menu><ul>
+<li>
+<a
+href=https://mdotti.com/#sobre>Sobre nós</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#produtos>Produtos e Serviços</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/blog>Blog</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#contato>Contato</a>
+</li></ul></div>
+<button
+class=btn-open-menu id=js-btn-menu-mobile>
+<span></span>
+<span></span>
+<span></span>
+</button></div></header><div
+class=menu-responsive><div
+class=overlay></div><aside><div
+class=content><div
+class=logo>
+<a
+href=index.html>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/logo-white.png alt="Logo M.Dotti">
+</a></div><div
+class=big-menu><ul><h4>Menu</h4>
+<li>
+<a
+href=https://mdotti.com/#sobre>Sobre nós</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#produtos>Produtos e Serviços</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/blog>Blog</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#contato>Contato</a>
+</li></ul></div><div
+class=small-menu><ul><h4>Informações</h4>
+<li>
+<a
+href=https://mdotti.com/politica/ >Política de Privacidade</a>
+</li></ul></div></div></aside></div><section
+class=s-hero-zboox>
+<iframe
+width=100% height=100%
+src="https://www.youtube.com/embed/tn7P4uOelIk?autoplay=1&mute=1&loop=1&playlist=tn7P4uOelIk&controls=0&showinfo=0&modestbranding=1&rel=0"
+title="YouTube video player"
+frameborder=0
+allow="autoplay; encrypted-media"
+referrerpolicy=strict-origin-when-cross-origin
+allowfullscreen>
+</iframe><div
+class=container><div
+class=text data-aos=fade>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/logo-zboox.svg alt="Icon Zboox"><h1>Armazenamento seguro, escalável e de alta performance</h1><div
+class=cta>
+<a
+href=#modelos class="btn-primary purple">
+Conheça o ZBoox
+</a></div></div></div></section><section
+class=s-destaques-zboox><div
+class=container><div
+class=top><div
+class=title><h2>Comece pelos destaques.</h2></div></div><main><div
+class=box><div
+class=icon data-aos=zoom-in>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-circles.svg alt="Icon Circles"></div><p>Edição simultânea de várias ilhas sem necessidade de cópias ou transferências de arquivos.</p></div><div
+class=box><div
+class=icon data-aos=zoom-in>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-intersect.svg alt="Icon Circles"></div><p>Desenvolvido para centralizar e proteger seus projetos com alta performance e escalabilidade sob demanda.</p></div><div
+class=box><div
+class=icon data-aos=zoom-in>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-lock.svg alt="Icon Circles"></div><p>Segurança da informação e flexibilidade total para se adaptar ao crescimento da sua produção.</p></div><div
+class=box><div
+class=icon data-aos=zoom-in>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-joy.svg alt="Icon Circles"></div><p>Monitoramento 24x7, proporcionando total controle e confiabilidade no seu fluxo de trabalho.</p></div></main></div></section><section
+class=s-models id=modelos><div
+class=container><main><div
+class=left><div
+class=photo data-aos=fade-down>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/zboox-mini.png alt="Zboox Mini"></div><p>Tenha o mesmo formato de trabalho de grandes infraestruturas em um ambiente enxuto e sem complexidade. Com o ZBoox Mini você pode ter até 62TB de espaço útil em uma caixa de dimensões reduzidas, rodando o mesmo sistema dos irmãos maiores, com segurança e confiabilidade.</p></div><div
+class=right><div
+class=logo>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/logo-zboox-mini.png alt="Logo Zboox Mini"></div><h2>Versátil e ergonômico</h2><ul>
+<li>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-check-purple.svg alt=Check>
+<span>Chassi customizado e ergonômico</span>
+</li>
+<li>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-check-purple.svg alt=Check>
+<span>8 Baias Hot-Swap</span>
+</li>
+<li>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-check-purple.svg alt=Check>
+<span>1Gb Base-T e 10Gb Base-T (Opcional)</span>
+</li>
+<li>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-check-purple.svg alt=Check>
+<span>Até 82TB de espaço útil</span>
+</li></ul></div></main></div><div
+class=container-full><main><div
+class=line></div></main></div><div
+class=container><main><div
+class=left><div
+class=photo data-aos=fade-down>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/zboox-zh.png alt="Zboox ZH"></div><p>Visando o melhor custo/benefício por espaço útil, a linha ZH consolida espaço e performance para demandas de médio à grande porte, permitindo a espanção do volume de forma dinâmica e prática.</p></div><div
+class=right><div
+class=logo>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/logo-zboox-zh.png alt="Logo Zboox ZH"></div><h2>Espaço e performance</h2><ul>
+<li>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-check-purple.svg alt=Check>
+<span>Chassi Rack  2/4U</span>
+</li>
+<li>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-check-purple.svg alt=Check>
+<span>Até 1PB de espaço útil em 4U</span>
+</li>
+<li>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-check-purple.svg alt=Check>
+<span>Portas 10Gb Base-T e SFP+</span>
+</li>
+<li>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-check-purple.svg alt=Check>
+<span>Fonte Redundante</span>
+</li>
+<li>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-check-purple.svg alt=Check>
+<span>Scale Out</span>
+</li></ul></div></main></div></section><section
+class="s-numbers s-numbers-zboox"><main
+class=container-full><div
+class=container><div
+class=big-numbers>
+<strong
+data-aos=zoom-in>+145</strong>
+<span>Servidores <br> em operação</span></div><div
+class=big-numbers>
+<strong
+data-aos=zoom-in>+10PB</strong>
+<span>Espaço útil <br> disponibilizado</span></div><div
+class=big-numbers>
+<strong
+data-aos=zoom-in>+300</strong>
+<span>Projetos audiovisuais <br> produzidos</span></div><div
+class=big-numbers>
+<strong
+data-aos=zoom-in>+100</strong>
+<span>Clientes utilizando o <br> ZBoox em 8 Estados Brasileiros</span></div></div></main></section><section
+class=s-screens><div
+class=container><h5>Veja as telas de gerenciamento do sistema:</h5><div
+class="swiper slide-screens"><div
+class=swiper-wrapper><div
+class=swiper-slide><div
+class=thumb-screen>
+<a
+class=photo data-aos=fade href=https://mdotti.com/core/views/a9c5111cff/img/screens/screen1.jpg data-lightbox=telas data-title=Dashboard>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/screens/screen1.jpg alt=Screen>
+</a></div></div><div
+class=swiper-slide><div
+class=thumb-screen>
+<a
+class=photo data-aos=fade href=https://mdotti.com/core/views/a9c5111cff/img/screens/screen2.jpg data-lightbox=telas data-title=Dashboard>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/screens/screen2.jpg alt=Screen>
+</a></div></div><div
+class=swiper-slide><div
+class=thumb-screen>
+<a
+class=photo data-aos=fade href=https://mdotti.com/core/views/a9c5111cff/img/screens/screen3.jpg data-lightbox=telas data-title=Dashboard>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/screens/screen3.jpg alt=Screen>
+</a></div></div><div
+class=swiper-slide><div
+class=thumb-screen>
+<a
+class=photo data-aos=fade href=https://mdotti.com/core/views/a9c5111cff/img/screens/screen4.jpg data-lightbox=telas data-title=Dashboard>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/screens/screen4.jpg alt=Screen>
+</a></div></div><div
+class=swiper-slide><div
+class=thumb-screen>
+<a
+class=photo data-aos=fade href=https://mdotti.com/core/views/a9c5111cff/img/screens/screen5.jpg data-lightbox=telas data-title=Dashboard>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/screens/screen5.jpg alt=Screen>
+</a></div></div><div
+class=swiper-slide><div
+class=thumb-screen>
+<a
+class=photo data-aos=fade href=https://mdotti.com/core/views/a9c5111cff/img/screens/screen5.jpg data-lightbox=telas data-title=Dashboard>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/screens/screen5.jpg alt=Screen>
+</a></div></div><div
+class=swiper-slide><div
+class=thumb-screen>
+<a
+class=photo data-aos=fade href=https://mdotti.com/core/views/a9c5111cff/img/screens/screen7.jpg data-lightbox=telas data-title=Dashboard>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/screens/screen7.jpg alt=Screen>
+</a></div></div><div
+class=swiper-slide><div
+class=thumb-screen>
+<a
+class=photo data-aos=fade href=https://mdotti.com/core/views/a9c5111cff/img/screens/screen8.jpg data-lightbox=telas data-title=Dashboard>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/screens/screen8.jpg alt=Screen>
+</a></div></div></div></div></div></section><section
+class=s-sticky-resources><div
+class=block><div
+class=container><div
+class=text><h2>Segurança da Informação</h2><p>Proteção contra falhas físicas e lógicas, garantindo integridade e disponibilidade dos dados. O filesystem moderno e resiliente do ZBoox evita corrupção de arquivos, minimiza riscos operacionais permitindo a recuperação de arquivos deletados ou sobrescritos. Além disso, oferece mecanismos de recuperação contra ataques ransomware, protegendo seu conteúdo contra sequestro de dados.</p></div><div
+class=asset data-aos=fade-up>
+<img
+src=https://mdotti.com/storage/2025/05/resources-zboox-1.jpg alt=Zboox></div></div></div><div
+class=block><div
+class=container><div
+class=text><h2>Escalabilidade</h2><p>Cresça no seu ritmo! Expansão modular do espaço para acompanhar suas demandas de densidade e performance. Sua tecnologia possibilita a adição de novos servidores ZBoox para somar ao armazenamento de forma transparente.</p></div><div
+class=asset data-aos=fade-up>
+<img
+src=https://mdotti.com/storage/2025/05/resources-zboox-2.jpg alt=Zboox></div></div></div><div
+class=block><div
+class=container><div
+class=text><h2>Flexibilidade</h2><p>Compatível com diferentes workflows, sistemas operacionais (Windows, Linux e MacOS) e softwares do mercado, como Adobe Premiere Pro, Avid Media Composer, DaVinci Resolve, entre outros.</p></div><div
+class=asset data-aos=fade-up>
+<img
+src=https://mdotti.com/storage/2025/05/flex-zboox.jpg alt=Zboox></div></div></div><div
+class=block><div
+class=container><div
+class=text><h2>Alta Performance</h2><p>Velocidade otimizada para edição, ingest e compartilhamento de mídias em tempo real. Permite a edição simultânea de várias ilhas diretamente no storage, sem necessidade de cópias ou transferências de arquivos.</p></div><div
+class=asset data-aos=fade-up>
+<img
+src=https://mdotti.com/storage/2025/05/performance-zboox.jpg alt=Zboox></div></div></div><div
+class=block><div
+class=container><div
+class=text><h2>Robustez</h2><p>Arquitetura baseada em Linux, desenvolvida e customizada para oferecer estabilidade, confiabilidade e extrair máxima performance do hardware.</p></div><div
+class=asset data-aos=fade-up>
+<img
+src=https://mdotti.com/storage/2025/05/resources-zboox-5.jpg alt=Zboox></div></div></div><div
+class=block><div
+class=container><div
+class=text><h2>Monitoramento 24x7</h2><p>Supervisão contínua, permitindo o acompanhamento em tempo real do desempenho, integridade e segurança do sistema. O monitoramento proativo identifica possíveis falhas, garantindo alta disponibilidade e minimizando riscos de downtime.</p></div><div
+class=asset data-aos=fade-up>
+<img
+src=https://mdotti.com/storage/2025/05/monitoramento-zboox.jpg alt=Zboox></div></div></div><div
+class=block><div
+class=container><div
+class=text><h2>Interface de Gerenciamento</h2><p>ZBoox conta com uma interface web de gerenciamento moderna e intuitiva, desenvolvida pela MDotti para facilitar a administração do servidor. Com um design fácil de usar, ela permite o controle e gerenciamento de Usuários, Workspaces, Snapshots, Backup e verificação da saúde do equipamento</p></div><div
+class=asset data-aos=fade-up>
+<img
+src=https://mdotti.com/storage/2025/05/gerenciamento-zboox.jpg alt=Zboox></div></div></div></section><section
+class=s-clients><main
+class=container-full><div
+class=container><h5>Conheça as empresas que confiam no nosso trabalho:</h5><div
+class="swiper slide-logos"><div
+class=swiper-wrapper><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/origolab.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/acelerados.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/band.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/bionica.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/boutique.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/canal-rural.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/carbono-media.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/casablanca.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/catalunya.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/caze-tv.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/centauro.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/chatrone.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/duo-2.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/etc.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/iguale.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/maria-farinha.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/medialand.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/moonshot.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/new.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/o2-filmes.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/sbt.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/sdvc.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/the-end.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/ufc.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/unisom.jpg alt=Parceiros></div></div><div
+class=swiper-slide><div
+class=box>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/logos/v8.jpg alt=Parceiros></div></div></div></div></div></main></section><section
+class=s-end><main
+class=container-full><video
+src=https://mdotti.com/core/views/a9c5111cff/video/bg-mdotti-hero.mp4 autoplay loop playsinline muted></video><div
+class=container><div
+class=text data-aos=zoom-in><h5>ZBoox</h5><h2>Alta performance começa com a escolha certa!</h2><div
+class=cta>
+<a
+href=#contato class="btn-primary purple">Entre em contato</a></div></div></div></main></section><section
+class=s-contact id=contato><div
+class=container><div
+class=top><div
+class=title><h2>Vamos conversar?</h2><p>Contamos com especialistas que te ajudam a encontrar a melhor solução para o seu negócio. Entre
+em contato e fale com a gente!</p></div></div><main><form
+class=form-mdotti action=https://mdotti.com/core/views/a9c5111cff/mail/email-contato.php method=post><div
+class=input><div
+class=group>
+<label
+for=nome>Nome</label>
+<input
+type=text id=nome name=nome placeholder="Digite seu nome completo" required autocomplete=name aria-required=true></div><div
+class=group>
+<label
+for=email>E-mail</label>
+<input
+type=email id=email name=email placeholder="Digite seu melhor e-mail" required autocomplete=email aria-required=true></div><div
+class=group>
+<label
+for=tel>Telefone</label>
+<input
+type=tel id=tel name=tel placeholder="(00) 00000-0000" required autocomplete=tel aria-required=true></div><div
+class=group>
+<label
+for=empresa>Empresa</label>
+<input
+type=text id=empresa name=empresa placeholder="Digite o nome da sua empresa" required autocomplete=organization aria-required=true></div><div
+class=group>
+<label
+for=mensagem>Mensagem</label>
+<input
+type=text placeholder="Digite sua mensagem..." id=mensagem name=mensagem required aria-required=true></div><div
+class=group><div
+class=g-recaptcha data-sitekey=6Lf6oEYrAAAAAJvBxQvuJoOYqM_2eWi03PNc2yv1 data-action=LOGIN></div></div></div><div
+class=cta>
+<button
+type=submit class="btn-primary purple">Entre em contato</button></div></form><div
+class=bn-video><video
+src=https://mdotti.com/core/views/a9c5111cff/video/bn-video-mdotti.mp4 autoplay loop playsinline muted></video><div
+class=caption data-aos=zoom-in><div
+class=icon data-aos=zoom-in>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-youtube.svg alt=Youtube></div><h2>Acompanhe nosso conteúdo no <span>Youtube</span>!</h2><div
+class=cta>
+<a
+target=_blank href=https://www.youtube.com/c/MDottiTecnologia class="btn-primary purple">Acessar canal do Youtube</a></div></div></div></main></div></section><div
+class=wpp>
+<a
+target=_blank href="https://api.whatsapp.com/send/?phone=%2B5511988665683">
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-wpp.svg alt=WhatsApp>
+</a></div><footer><main
+class=container-full><div
+class=container><div
+class=main-foot><div
+class=info><div
+class=logo>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/logo-mdotti-white.svg alt="Logo MDotti White"></div><p
+style="margin-bottom: 32px">A MDotti Tecnologia combina expertise em TI e audiovisual para oferecer soluções acessíveis e completas, atendendo desde produtores independentes até grandes produções. Nossa missão é simplificar e democratizar a tecnologia para o mercado de pré e pós-produção.</p>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/assets/selo-seagate-reseller.png alt></div><div
+class=group-col><div
+class=col><h5>Sitemap</h5><ul>
+<li>
+<a
+href=https://mdotti.com/#sobre>Sobre Nós</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#produtos>Produtos</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/blog>Blog</a>
+</li></ul></div><div
+class=col><h5>Informações</h5><ul>
+<li>
+<a
+href=https://mdotti.com/politica>Política</a>
+</li>
+<li>
+<a
+href=https://mdotti.com/#contato>Contato</a>
+</li></ul></div><div
+class="col contact"><h5>Contato</h5><ul>
+<li>
+<a
+href=#>Rua Milton Lodetti, 44 - Vila Leopoldina,<br> São Paulo - SP, 05303-080</a>
+</li>
+<li>
+<a
+href=#>+55 (11) 98866-5683</a>
+</li>
+<li>
+<a
+href=#>contato@mdotti.com</a>
+</li></ul></div></div></div><div
+class=copy><div
+class=rights>
+<a
+target=_blank href=https://mvmt.com.br>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-mvmt.svg alt="Website by mvmt.com.br">
+</a><div
+class=content>
+<strong>©2026 MDotti.</strong>
+<span>Todos os direitos reservados.</span></div></div><div
+class=social><ul>
+<li>
+<a
+target=_blank href=https://www.facebook.com/mdottitecnologia>
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-fb.svg alt=Facebook>
+</a>
+</li>
+<li>
+<a
+target=_blank href=https://www.linkedin.com/company/mdotti-tecnologia/ >
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-linkedin.svg alt=Linkedin>
+</a>
+</li>
+<li>
+<a
+target=_blank href=https://www.instagram.com/mdottitec/ >
+<img
+src=https://mdotti.com/core/views/a9c5111cff/img/icons/icon-instagram.svg alt=Instagram>
+</a>
+</li></ul></div></div></div></main></footer> <script src=https://unpkg.com/swiper@8/swiper-bundle.min.js></script> <script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script> <script src=https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js></script> <script>// inicializar aos animate
+    AOS.init({
+        duration: 1000,
+        once: true
+    });</script> <script src=https://mdotti.com/core/views/a9c5111cff/js/script.js></script> <script src=https://mdotti.com/core/views/a9c5111cff/js/slides.js></script> <script type=speculationrules>{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/mdotti/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script> <noscript>
+<iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-WMBNVN5R" height=0 width=0 style=display:none;visibility:hidden></iframe>
+</noscript> <script id=ajax-search-script-js-extra>var ajaxSearch = {"ajax_url":"https://mdotti.com/dash/admin-ajax.php"};
+//# sourceURL=ajax-search-script-js-extra</script> <script id=ajax-search-script-js src=https://mdotti.com/core/views/a9c5111cff/js/ajax-search.js></script> </body></html>

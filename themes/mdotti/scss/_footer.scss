@@ -1,0 +1,245 @@
+footer {
+  background: #fff;
+  padding: 3.2rem;
+
+  main {
+    border-radius: 0.5rem;
+    background: #1f1c30;
+    padding: 6.4rem 0;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+
+    .main-foot {
+      @include flex(row, flex-start, space-between);
+
+      .info {
+        max-width: 38.4rem;
+        width: 100%;
+
+        p {
+          margin-top: 3.2rem;
+          margin-bottom: 3.2rem;
+          color: #d7d1fb;
+          text-align: left;
+        }
+      }
+
+      .group-col {
+        max-width: 62.5rem;
+        width: 100%;
+        @include flex(row, flex-start, space-between);
+
+        .col {
+          h5 {
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 100%;
+            text-transform: uppercase;
+            margin-bottom: 3.2rem;
+          }
+
+          ul {
+            li {
+              &:not(:last-child) {
+                margin-bottom: 3.2rem;
+              }
+
+              a {
+                color: #d7d1fb;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 150%;
+                text-transform: uppercase;
+                transition: all 0.3s;
+
+                &:hover {
+                  color: #735ee0;
+                }
+              }
+            }
+          }
+
+          &.contact {
+            pointer-events: none;
+
+            ul {
+              li {
+                a {
+                  font-size: 1.6rem;
+                  text-transform: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .copy {
+      border-top: 1px solid rgba(95, 72, 217, 0.4);
+      margin-top: 6.4rem;
+      padding-top: 6.4rem;
+      @include flex(row, center, space-between);
+
+      .rights {
+        @include flex(row, center, flex-start);
+        gap: 1.6rem;
+
+        .content {
+
+          span,
+          strong {
+            color: #d7d1fb;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: -0.032rem;
+            display: block;
+          }
+        }
+
+        a {
+          transition: all 0.3s;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+
+      .social {
+        ul {
+          @include flex(row, center, flex-end);
+          gap: 4.8rem;
+
+          li {
+            a {
+              transition: all 0.3s;
+
+              &:hover {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(1200px) {
+    padding: 2rem;
+
+    main {
+      padding: 4.8rem 0;
+
+      .main-foot {
+        .info {
+          max-width: 31%;
+        }
+
+        .group-col {
+          max-width: 60%;
+        }
+      }
+    }
+  }
+
+  @include responsive(991px) {
+    padding: 2rem;
+
+    main {
+      padding: 4.8rem 0;
+
+      .main-foot {
+        flex-wrap: wrap;
+
+        .info {
+          max-width: 100%;
+          margin-bottom: 4.8rem;
+        }
+
+        .group-col {
+          max-width: 100%;
+        }
+      }
+
+      .copy {
+        margin-top: 4.8rem;
+        padding-top: 4.8rem;
+
+        .social {
+          ul {
+            gap: 4rem;
+
+            li {
+              a {
+                img {
+                  max-width: 2.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(520px) {
+    padding: 1rem;
+
+    main {
+      padding: 3.2rem 0;
+
+      .main-foot {
+        flex-wrap: wrap;
+
+        .info {
+          max-width: 100%;
+          margin-bottom: 4.8rem;
+
+          .logo {
+            max-width: 13rem;
+          }
+        }
+
+        .group-col {
+          max-width: 100%;
+          flex-wrap: wrap;
+
+          .col {
+            width: 50%;
+
+            &:not(:last-child) {
+              margin-bottom: 6.4rem;
+            }
+
+            &:last-child {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .copy {
+        @include flex(column, center, center);
+
+        .social {
+          width: 100%;
+          order: 1;
+
+          ul {
+            gap: 0;
+            justify-content: space-around;
+          }
+        }
+
+        .rights {
+          order: 1;
+          margin-bottom: 3.2rem;
+        }
+      }
+    }
+  }
+}
