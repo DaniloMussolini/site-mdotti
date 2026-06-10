@@ -1,0 +1,71 @@
+# =====================================================================
+#  .gitignore — repo site-mdotti (raiz = wp-content/)
+#  Coloque este arquivo na raiz do repositório, ao lado de themes/, plugins/ etc.
+# =====================================================================
+
+# --- Sistema operacional ---
+.DS_Store
+.AppleDouble
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# --- Editores / IDE ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*~
+*.swp
+
+# --- Build / dependências locais (se você usar Node/SASS) ---
+node_modules/
+.sass-cache/
+*.css.map
+*.log
+npm-debug.log*
+
+# =====================================================================
+#  WordPress — arquivos que NÃO devem ir pro Git
+# =====================================================================
+
+# Mídia (gerada no servidor, pesada, fica nos backups)
+uploads/
+
+# Cache de plugins (W3 Total Cache, WP Super Cache, LiteSpeed, etc.)
+cache/
+advanced-cache.php
+wp-cache-config.php
+w3tc-config/
+et-cache/
+litespeed-cache/
+
+# Logs de plugins (Wordfence etc.)
+wflogs/
+*.log
+
+# Dumps de banco (use backups do cPanel, não Git)
+*.sql
+*.sql.gz
+
+# Backups e arquivos compactados
+*.zip
+*.tar
+*.tar.gz
+*.bak
+
+# =====================================================================
+#  IMPORTANTE
+# =====================================================================
+# O .gitignore só ignora arquivos AINDA NÃO rastreados.
+# Pra remover do Git arquivos que já foram comitados (database.sql,
+# cache/, wflogs/, uploads/, w3tc-config/), você precisa rodar:
+#
+#     git rm -r --cached database.sql cache/ wflogs/ w3tc-config/ uploads/ advanced-cache.php
+#     git commit -m "chore: remove arquivos que não pertencem ao repo"
+#     git push
+#
+# Eles continuam existindo na sua pasta local e no servidor —
+# só param de ser versionados.
+# =====================================================================
