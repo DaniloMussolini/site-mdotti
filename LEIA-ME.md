@@ -1,84 +1,41 @@
-# Pacote de atualização — site-mdotti
+# Pacote: Workstation → HOMOLOG
 
-Conteúdo deste ZIP:
+Sobe estes arquivos no servidor de homologação. Tudo dentro deste ZIP
+espelha o caminho relativo a partir de `public_html/homolog/`.
+
+## Conteúdo
 
 ```
-.gitignore                                    ← novo, vai na raiz do repo
-themes/
-  mdotti/
-    page-workstation.php                      ← SUBSTITUI o atual
-    functions.php                             ← SUBSTITUI o atual (com snippet de enqueue)
-    css/workstation.css                       ← NOVO
-    js/workstation.js                         ← NOVO
-    img/assets/workstation-tower.png          ← NOVO
-    img/assets/rig-hero.jpg                   ← NOVO
-    img/assets/rig-mdotti.jpg                 ← NOVO
-    img/assets/rig-side.jpg                   ← NOVO
-    img/assets/rig-detail-gpus.jpg            ← NOVO
-    img/assets/rig-detail-cooler.jpg          ← NOVO
+wp-content/themes/mdotti/
+├── page-workstation.php            ← SUBSTITUI
+├── functions.php                   ← SUBSTITUI (snippet de enqueue da Workstation)
+├── css/workstation.css             ← NOVO
+├── js/workstation.js               ← NOVO
+└── img/assets/
+    ├── workstation-tower.png       ← NOVO
+    ├── rig-hero.jpg                ← NOVO
+    ├── rig-mdotti.jpg              ← NOVO
+    ├── rig-side.jpg                ← NOVO
+    ├── rig-detail-gpus.jpg         ← NOVO
+    └── rig-detail-cooler.jpg       ← NOVO
 ```
 
-## Como aplicar (fluxo Git → FileZilla)
+## Deploy via FileZilla
 
-### 1. Aplicar no repositório local
+1. Painel esquerdo (local): pasta deste ZIP descompactado.
+2. Painel direito (remoto): `public_html/homolog/`
+3. Arrasta a pasta `wp-content/` por cima. FileZilla preserva a estrutura e
+   só sobrescreve os arquivos modificados. Confirma "Sobrescrever".
 
-```bash
-# entra no seu clone do site-mdotti
-cd /caminho/para/site-mdotti
+## Pós-upload (no homolog)
 
-# descompacta o ZIP por cima (preserva a estrutura de pastas)
-# no macOS / Linux:
-unzip -o ~/Downloads/site-mdotti-update.zip -d .
+- Limpa cache do navegador (`Ctrl+Shift+R` / `Cmd+Shift+R`).
+- Acessa `https://homolog.mdotti.com/workstation` em aba anônima.
+- Confere: torre no hero, faixa de logos rodando, carrossel do Rig com setas
+  e dots, grade de 6 serviços com ícones, formulário de contato.
 
-# no Windows: extraia com o Explorer e confirme "Substituir" nos arquivos repetidos
-```
+## Pra promover depois pra produção
 
-### 2. Conferir e comitar
-
-```bash
-git status                          # confira a lista de arquivos modificados
-git add .gitignore themes/mdotti/
-git commit -m "feat(workstation): nova página + seção Rig MDotti"
-git push origin main
-```
-
-### 3. (Opcional, mas recomendado) limpar o que não deve estar no repo
-
-O `.gitignore` novo já cobre `database.sql`, `cache/`, `wflogs/`, `w3tc-config/`,
-`uploads/` etc. Pra remover do Git o que já está versionado por engano:
-
-```bash
-git rm -r --cached database.sql cache/ wflogs/ w3tc-config/ uploads/ advanced-cache.php
-git commit -m "chore: remove arquivos que não pertencem ao repo"
-git push
-```
-
-Os arquivos continuam existindo localmente e no servidor — só saem do controle de versão.
-
-### 4. Deploy no servidor (FileZilla)
-
-Conectado ao HostGator, painel direito em `public_html/wp-content/themes/mdotti/`,
-arraste **apenas estes arquivos** do painel esquerdo:
-
-- `page-workstation.php`
-- `functions.php`
-- `css/workstation.css`
-- `js/workstation.js`
-- 6 imagens em `img/assets/`
-
-Confirme "Sobrescrever" quando perguntar.
-
-### 5. Verificar
-
-- Limpe cache do WordPress (plugin) + Cloudflare/CDN, se houver.
-- `Ctrl+Shift+R` / `Cmd+Shift+R` no navegador.
-- Abra a página de Workstation e confira: torre no hero, zigzag, carrossel do Rig
-  com setas e dots, lightbox abre/fecha, grid de 6 serviços com hover.
-
-### Rollback (se algo der errado)
-
-```bash
-git revert HEAD          # desfaz o último commit, gera um commit "anti-feature"
-git push
-```
-Depois sobe pelo FileZilla os mesmos arquivos (agora na versão revertida).
+Mesmos arquivos, painel remoto em `public_html/wp-content/themes/mdotti/`.
+Após subir em produção: wp-admin → Hide My WP → Tools → **Flush Rewrites**
+(senão o plugin pode servir versões antigas dos assets reescritos).
