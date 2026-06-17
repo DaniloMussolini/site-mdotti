@@ -1,0 +1,27 @@
+name: Deploy para Homologação (Staging)
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'themes/mdotti/**' # Dispara apenas se houver alterações no tema
+
+jobs:
+  deploy:
+    name: Deploy via FTP
+    runs-on: ubuntu-latest
+    steps:
+    - name: Baixar código do repositório
+      uses: actions/checkout@v3
+
+    - name: Sincronizar arquivos com a Hostgator (Homolog)
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: 21 # Modifique para 22 se sua hospedagem Hostgator aceitar conexões SFTP
+        local-dir: ./themes/mdotti/
+        server-dir: public_html/homolog/wp-content/themes/mdotti/
+        dangerous-clean-slate: false # Garante que não apagará outros arquivos/mídias não rastreados no servidor
