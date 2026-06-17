@@ -87,6 +87,11 @@
                                 <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-instagram.svg" alt="Instagram">
                             </a>
                         </li>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/@MDottiTecnologia">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-youtube.svg" alt="YouTube">
+                            </a>
+                        </li>
                         <!-- <li>
                             <a href="#">
                                 <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-wpp.svg" alt="WhatsApp">
