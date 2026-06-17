@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'themes/mdotti/**' # Dispara apenas se houver alterações no tema
+  workflow_dispatch: # Permite disparar manualmente pelo painel do GitHub
 
 jobs:
   deploy:

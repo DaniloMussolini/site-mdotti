@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - 'v*' # Dispara apenas quando uma tag de versão (ex: v1.0.0) é enviada
+  workflow_dispatch: # Permite disparar manualmente pelo painel do GitHub
 
 jobs:
   deploy:
