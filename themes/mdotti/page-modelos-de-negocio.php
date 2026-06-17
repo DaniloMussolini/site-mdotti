@@ -14,10 +14,23 @@
  * Dependências (registradas em functions.php):
  *   - css/modelos.css
  *
+ * Imagens dos modelos (já na biblioteca de mídia): /uploads/2025/05/
+ *   modelos-venda.jpg, modelos-aluguel.jpg, modelos-leasing.jpg
  */
 ?>
 
 <?php get_header(); ?>
+
+<?php
+// URLs das imagens dos modelos. Por padrão usa os uploads existentes.
+// Se você cadastrar campos ACF (imagem_venda / imagem_locacao / imagem_leasing),
+// eles têm prioridade — facilita trocar as fotos pelo wp-admin no futuro.
+$uploads   = wp_upload_dir();
+$base_url  = $uploads['baseurl'];
+$img_venda   = get_field('imagem_venda')   ?: $base_url . '/2025/05/modelos-venda.jpg';
+$img_locacao = get_field('imagem_locacao') ?: $base_url . '/2025/05/modelos-aluguel.jpg';
+$img_leasing = get_field('imagem_leasing') ?: $base_url . '/2025/05/modelos-leasing.jpg';
+?>
 
 <!-- ============ HERO ============ -->
 <section class="s-models-hero">
@@ -68,11 +81,8 @@
 
       <!-- VENDA -->
       <article class="sm-card" data-model="venda">
-        <div class="sm-photo" role="img" aria-label="Venda — estrutura própria">
-          <span class="sm-glyph">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0l-6.2-6.2a2 2 0 0 1-.6-1.4V4.6a1 1 0 0 1 1-1h8.4a2 2 0 0 1 1.4.6l6 6a2 2 0 0 1 0 2.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="8.2" cy="8.2" r="1.5" stroke="currentColor" stroke-width="1.6"/></svg>
-          </span>
-          <span class="sm-photo-tag">Patrimônio próprio</span>
+        <div class="sm-photo">
+          <img src="<?php echo esc_url( $img_venda ); ?>" alt="Venda de equipamentos MDotti">
         </div>
         <div class="sm-body">
           <div class="sm-label"><span class="dot"></span>Venda</div>
@@ -92,11 +102,8 @@
       <!-- LEASING (DESTAQUE) -->
       <article class="sm-card is-featured" data-model="leasing">
         <div class="sm-flag"><span class="spark">&#9733;</span> Mais escolhido</div>
-        <div class="sm-photo" role="img" aria-label="Leasing — locação com opção de compra">
-          <span class="sm-glyph">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M20.5 12a8.5 8.5 0 1 1-2.5-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M20.5 3.5V9H15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12.2l2 2 4.2-4.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <span class="sm-photo-tag">Use agora · decida no fim</span>
+        <div class="sm-photo">
+          <img src="<?php echo esc_url( $img_leasing ); ?>" alt="Leasing &mdash; locação com opção de compra MDotti">
         </div>
         <div class="sm-body">
           <div class="sm-label"><span class="dot"></span>Locação com Opção de Compra</div>
@@ -116,11 +123,8 @@
 
       <!-- LOCAÇÃO -->
       <article class="sm-card" data-model="locacao">
-        <div class="sm-photo" role="img" aria-label="Locação — flexível e pontual">
-          <span class="sm-glyph">
-            <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="4.8" width="17" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9.4h17M8 3v3.6M16 3v3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 12.4v3l2 1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <span class="sm-photo-tag">Por período · sob demanda</span>
+        <div class="sm-photo">
+          <img src="<?php echo esc_url( $img_locacao ); ?>" alt="Locação de equipamentos MDotti">
         </div>
         <div class="sm-body">
           <div class="sm-label"><span class="dot"></span>Locação</div>

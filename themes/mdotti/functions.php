@@ -94,23 +94,23 @@ add_action( 'wp_enqueue_scripts', function () {
         );
     }
 
-    // --- Página TPN ---
+    // --- Página Modelos de Negócio ---
+    if ( is_page_template( 'page-modelos-de-negocio.php' ) ) {
+        wp_enqueue_style(
+            'mdotti-modelos',
+            $theme_uri . '/css/modelos.css',
+            array(),
+            filemtime( $theme_path . '/css/modelos.css' )
+        );
+    }
+
+    // --- Página TPN (Trusted Partner Network) ---
     if ( is_page_template( 'page-tpn.php' ) ) {
         wp_enqueue_style(
             'mdotti-tpn',
             $theme_uri . '/css/tpn.css',
             array(),
             filemtime( $theme_path . '/css/tpn.css' )
-        );
-    }
-
-    // --- Página Modelos de Negócio + Home (seção "Modelos de Negócio") ---
-    if ( is_page_template( 'page-modelos-de-negocio.php' ) || is_page_template( 'page-home.php' ) || is_front_page() ) {
-        wp_enqueue_style(
-            'mdotti-modelos',
-            $theme_uri . '/css/modelos.css',
-            array(),
-            filemtime( $theme_path . '/css/modelos.css' )
         );
     }
 
