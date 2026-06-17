@@ -94,8 +94,8 @@ add_action( 'wp_enqueue_scripts', function () {
         );
     }
 
-    // --- Página Modelos de Negócio ---
-    if ( is_page_template( 'page-modelos-de-negocio.php' ) ) {
+    // --- Modelos de Negócio (página interna + seção na Home) ---
+    if ( is_page_template( 'page-modelos-de-negocio.php' ) || is_page_template( 'page-home.php' ) ) {
         wp_enqueue_style(
             'mdotti-modelos',
             $theme_uri . '/css/modelos.css',
