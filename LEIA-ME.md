@@ -38,7 +38,7 @@ A transferência de arquivos para os servidores da Hostgator é feita **100% aut
 
 ### 🌐 Fluxo 1 — Homologação (`homolog.mdotti.com`)
 *   **Gatilho:** Qualquer alteração enviada (`git push`) para o branch **`main`** que afete a pasta do tema (`themes/mdotti/**`).
-*   **Pasta de destino no servidor:** `homolog.mdotti.com/wp-content/themes/mdotti/`
+*   **Pasta de destino no servidor:** `wp-content/themes/mdotti/` (Relativo à raiz da conta FTP de homologação).
 
 ### 🔒 Fluxo 2 — Produção (`mdotti.com`)
 *   **Gatilho:** Envio de uma tag de versão no Git (ex: `v1.0.1`, `v1.1.0`).
@@ -47,7 +47,7 @@ A transferência de arquivos para os servidores da Hostgator é feita **100% aut
     git tag v1.0.1
     git push --tags
     ```
-*   **Pasta de destino no servidor:** `mdotti.com/wp-content/themes/mdotti/`
+*   **Pasta de destino no servidor:** `wp-content/themes/mdotti/` (Relativo à raiz da conta FTP de produção).
 
 ### 🖱️ Execução Manual (Workflow Dispatch)
 Se você precisar forçar um deploy sem alterar arquivos:
@@ -62,9 +62,15 @@ Se você precisar forçar um deploy sem alterar arquivos:
 
 Para que o deploy funcione, certifique-se de que os seguintes segredos estão cadastrados em seu repositório no GitHub (**Settings** → **Secrets and variables** → **Actions**):
 
-*   `FTP_SERVER`: Endereço do servidor FTP (Ex: `ftp.mdotti.com` ou o IP do servidor).
-*   `FTP_USERNAME`: Usuário de FTP da Hostgator.
-*   `FTP_PASSWORD`: Senha de FTP correspondente.
+*   `FTP_SERVER`: Endereço do servidor FTP comum (Ex: `ftp.mdotti.com` ou o IP do servidor).
+*   **Homologação:**
+    *   `FTP_HOMOLOG_USERNAME`: Usuário da conta FTP de Homologação.
+    *   `FTP_HOMOLOG_PASSWORD`: Senha da conta FTP de Homologação.
+    *   `FTP_HOMOLOG_SERVER`: (Opcional) Servidor FTP de Homologação (se diferente de FTP_SERVER).
+*   **Produção:**
+    *   `FTP_PROD_USERNAME`: Usuário da conta FTP de Produção.
+    *   `FTP_PROD_PASSWORD`: Senha da conta FTP de Produção.
+    *   `FTP_PROD_SERVER`: (Opcional) Servidor FTP de Produção (se diferente de FTP_SERVER).
 
 ---
 

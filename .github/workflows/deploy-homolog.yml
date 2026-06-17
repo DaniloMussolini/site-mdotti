@@ -19,10 +19,10 @@ jobs:
     - name: Sincronizar arquivos com a Hostgator (Homolog)
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        server: ${{ secrets.FTP_HOMOLOG_SERVER || secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_HOMOLOG_USERNAME }}
+        password: ${{ secrets.FTP_HOMOLOG_PASSWORD }}
         port: 21 # Modifique para 22 se sua hospedagem Hostgator aceitar conexões SFTP
         local-dir: ./themes/mdotti/
-        server-dir: homolog.mdotti.com/wp-content/themes/mdotti/
+        server-dir: wp-content/themes/mdotti/
         dangerous-clean-slate: false # Garante que não apagará outros arquivos/mídias não rastreados no servidor
