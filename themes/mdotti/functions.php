@@ -74,28 +74,45 @@ add_action('wp_ajax_nopriv_ajax_search', 'ajax_search_handler');
 // =========================================================================
 add_action( 'wp_enqueue_scripts', function () {
 
-    // Só carrega na página que usa o template Workstation
-    if ( ! is_page_template( 'page-workstation.php' ) ) {
-        return;
-    }
-
     $theme_uri  = get_template_directory_uri();
     $theme_path = get_template_directory();
 
-    wp_enqueue_style(
-        'mdotti-workstation',
-        $theme_uri . '/css/workstation.css',
-        array(),
-        filemtime( $theme_path . '/css/workstation.css' )
-    );
+    // --- Página Workstation ---
+    if ( is_page_template( 'page-workstation.php' ) ) {
+        wp_enqueue_style(
+            'mdotti-workstation',
+            $theme_uri . '/css/workstation.css',
+            array(),
+            filemtime( $theme_path . '/css/workstation.css' )
+        );
+        wp_enqueue_script(
+            'mdotti-workstation',
+            $theme_uri . '/js/workstation.js',
+            array(),
+            filemtime( $theme_path . '/js/workstation.js' ),
+            true
+        );
+    }
 
-    wp_enqueue_script(
-        'mdotti-workstation',
-        $theme_uri . '/js/workstation.js',
-        array(),
-        filemtime( $theme_path . '/js/workstation.js' ),
-        true
-    );
+    // --- Página TPN ---
+    if ( is_page_template( 'page-tpn.php' ) ) {
+        wp_enqueue_style(
+            'mdotti-tpn',
+            $theme_uri . '/css/tpn.css',
+            array(),
+            filemtime( $theme_path . '/css/tpn.css' )
+        );
+    }
+
+    // --- Página Modelos de Negócio + Home (seção "Modelos de Negócio") ---
+    if ( is_page_template( 'page-modelos-de-negocio.php' ) || is_page_template( 'page-home.php' ) || is_front_page() ) {
+        wp_enqueue_style(
+            'mdotti-modelos',
+            $theme_uri . '/css/modelos.css',
+            array(),
+            filemtime( $theme_path . '/css/modelos.css' )
+        );
+    }
 
 }, 20 );
 

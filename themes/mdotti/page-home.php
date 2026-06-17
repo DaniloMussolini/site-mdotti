@@ -256,6 +256,92 @@
     </main>
 </section>
 
+<!-- ============ MODELOS DE NEGÓCIO ============ -->
+<section class="s-models" id="modelos">
+    <div class="sm-inner">
+        <div class="sm-header" data-aos="fade-up">
+            <div class="sm-eyebrow"><span class="dot"></span>Escolha como investir</div>
+            <h2>Três formas de ter a <em>melhor tecnologia</em></h2>
+            <p>Independentemente do tamanho ou da duração do projeto, há um modelo que se adequa ao seu momento financeiro e operacional.</p>
+        </div>
+
+        <div class="sm-grid" data-highlight="featured">
+
+            <!-- VENDA -->
+            <article class="sm-card" data-model="venda">
+                <div class="sm-photo" role="img" aria-label="Venda — estrutura própria">
+                    <span class="sm-glyph">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0l-6.2-6.2a2 2 0 0 1-.6-1.4V4.6a1 1 0 0 1 1-1h8.4a2 2 0 0 1 1.4.6l6 6a2 2 0 0 1 0 2.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="8.2" cy="8.2" r="1.5" stroke="currentColor" stroke-width="1.6"/></svg>
+                    </span>
+                    <span class="sm-photo-tag">Patrimônio próprio</span>
+                </div>
+                <div class="sm-body">
+                    <div class="sm-label"><span class="dot"></span>Venda</div>
+                    <h3>Estrutura <em>própria</em></h3>
+                    <p>Para quem busca investir em estrutura própria, com total liberdade de configuração e o equipamento no seu patrimônio.</p>
+                    <ul class="sm-list">
+                        <li><span class="ico"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Liberdade total de configuração</span></li>
+                        <li><span class="ico"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Até 3 anos de garantia</span></li>
+                        <li><span class="ico"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Suporte técnico e customização</span></li>
+                    </ul>
+                    <div class="sm-cta">
+                        <a href="#contato" class="btn-alt">Quero comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- LEASING (DESTAQUE) -->
+            <article class="sm-card is-featured" data-model="leasing">
+                <div class="sm-flag"><span class="spark">&#9733;</span> Mais escolhido</div>
+                <div class="sm-photo" role="img" aria-label="Leasing — locação com opção de compra">
+                    <span class="sm-glyph">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20.5 12a8.5 8.5 0 1 1-2.5-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M20.5 3.5V9H15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12.2l2 2 4.2-4.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <span class="sm-photo-tag">Use agora · decida no fim</span>
+                </div>
+                <div class="sm-body">
+                    <div class="sm-label"><span class="dot"></span>Locação com Opção de Compra</div>
+                    <h3>Leasing <em>estratégico</em></h3>
+                    <p>Nosso modelo mais estratégico. Opere com os equipamentos ideais desde o início, sem descapitalizar sua empresa — e decida no fim do contrato.</p>
+                    <ul class="sm-list">
+                        <li><span class="ico"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Equipamentos ideais desde o início</span></li>
+                        <li><span class="ico"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Suporte com troca de peças inclusa</span></li>
+                        <li><span class="ico"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Sem descapitalizar a empresa</span></li>
+                        <li><span class="ico"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Opção de compra ao final do contrato</span></li>
+                    </ul>
+                    <div class="sm-cta">
+                        <a href="#contato" class="btn-primary purple">Quero fazer leasing</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- LOCAÇÃO -->
+            <article class="sm-card" data-model="locacao">
+                <div class="sm-photo" role="img" aria-label="Locação — flexível e pontual">
+                    <span class="sm-glyph">
+                        <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="4.8" width="17" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9.4h17M8 3v3.6M16 3v3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 12.4v3l2 1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <span class="sm-photo-tag">Por período · sob demanda</span>
+                </div>
+                <div class="sm-body">
+                    <div class="sm-label"><span class="dot"></span>Locação</div>
+                    <h3>Flexível e <em>pontual</em></h3>
+                    <p>Ideal para projetos temporários ou expansões pontuais. Equipamentos prontos para uso, sem necessidade de investimento inicial.</p>
+                    <ul class="sm-list">
+                        <li><span class="ico"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Ideal para projetos temporários</span></li>
+                        <li><span class="ico"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Equipamentos prontos para uso</span></li>
+                        <li><span class="ico"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Sem investimento inicial</span></li>
+                    </ul>
+                    <div class="sm-cta">
+                        <a href="#contato" class="btn-alt">Quero alugar</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
 <?php include(TEMPLATEPATH .'/includes/newsletter.php')?>
 
 <section class="s-blog" id="blog">

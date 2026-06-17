@@ -47,17 +47,30 @@ wp-content/themes/mdotti/
 
 ## Passo 1 — Aplicar no repositório Git
 
+Como a raiz deste repositório (`site-mdotti/`) equivale à pasta `wp-content/` do WordPress, os novos pacotes de atualização que venham estruturados com a pasta `wp-content/` devem ser extraídos temporariamente e depois copiados para a raiz do repositório para evitar duplicações.
+
 ```bash
 cd /caminho/para/site-mdotti
-unzip -o ~/Downloads/mdotti-update.zip -d .
-git add wp-content/themes/mdotti/
+
+# 1. Extrair o arquivo zip em um diretório temporário
+unzip -o ~/Downloads/mdotti-update.zip -d temp-update/
+
+# 2. Copiar o conteúdo da pasta wp-content de forma que mescle com a estrutura do repositório
+cp -r temp-update/wp-content/* .
+
+# 3. Remover a pasta temporária
+rm -rf temp-update/
+
+# 4. Adicionar as atualizações e fazer o commit
+git add themes/mdotti/
 git commit -m "feat(tpn): nova página TPN (didática, 4 shields + jornada)"
 git push origin main
 ```
 
 ## Passo 2 — Subir no HOMOLOG via FileZilla
 
-Painel remoto em `public_html/homolog/wp-content/themes/mdotti/`. Arraste:
+Painel remoto: `/public_html/homolog/wp-content/themes/mdotti/`.
+Arraste os arquivos atualizados de sua pasta local `themes/mdotti/` para a pasta correspondente no painel remoto:
 
 - `functions.php`
 - `page-tpn.php`

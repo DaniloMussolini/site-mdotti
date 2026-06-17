@@ -18,11 +18,9 @@
       filter: drop-shadow(0 2rem 4rem rgba(31, 28, 48, 0.18));
     }
 
-    /* Fallback p/ vídeo do bloco final */
+    /* Gradiente fica como fallback ATRÁS do vídeo (não esconde mais o vídeo) */
     section.s-end main { background: linear-gradient(135deg, #1f1c30 0%, #735ee0 100%); }
-    section.s-end main video { display: none; }
     section.s-contact .bn-video { background: linear-gradient(135deg, #735ee0 0%, #1f1c30 100%); }
-    section.s-contact .bn-video video { display: none; }
 
     /* =========================================================
        MODELOS (Workstation + Rig) — 3 variações alternáveis

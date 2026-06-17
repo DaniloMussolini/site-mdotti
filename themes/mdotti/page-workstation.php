@@ -193,6 +193,7 @@ get_header();
 <!-- END CTA -->
 <section class="s-end">
   <main class="container-full">
+    <video src="<?php echo get_template_directory_uri(); ?>/video/bg-mdotti-hero.mp4" autoplay loop playsinline muted></video>
     <div class="container">
       <div class="text">
         <h5>Workstation</h5>
@@ -229,6 +230,7 @@ get_header();
       </form>
 
       <div class="bn-video">
+        <video src="<?php echo get_template_directory_uri(); ?>/video/bn-video-mdotti.mp4" autoplay loop playsinline muted></video>
         <div class="caption">
           <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/icon-youtube.svg" alt="Youtube"></div>
           <h2>Acompanhe nosso conteúdo no <span>Youtube</span>!</h2>
