@@ -110,7 +110,7 @@ section.s-solutions main .box::before { border-radius: 1.2rem; }
                         </div>
                         <div class="asset">
                             <a href="<?php bloginfo('wpurl')?>/workstation/">
-                                <img src="<?php echo get_template_directory_uri() ?>/img/assets/workstation-asset.png" alt="Workstation">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/assets/workstation-tower.png" alt="Workstation">
                             </a>
                         </div>
                     </div>
