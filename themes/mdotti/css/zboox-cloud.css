@@ -270,3 +270,19 @@
     section.s-end main { background: linear-gradient(135deg, #1f1c30 0%, #735ee0 100%); }
     section.s-contact .bn-video { background: linear-gradient(135deg, #735ee0 0%, #1f1c30 100%); }
     section.s-contact .bn-video video { display:block; }
+
+    /* ===== Cabeçalho branco sobre o hero escuro =====
+       O header do tema é position:absolute e fica SOBRE o hero. Como aqui o hero é
+       escuro, o logo/menu padrão (escuros) somem. Estas regras deixam tudo branco
+       apenas nesta página. (Escopo: classe da página — no WordPress, body_class
+       gera .page-template-page-zboox-cloud automaticamente.) */
+    .page-zboox-cloud header,
+    .page-template-page-zboox-cloud header { z-index: 1000; }
+    .page-zboox-cloud header .logo img,
+    .page-template-page-zboox-cloud header .logo img { filter: brightness(0) invert(1); }
+    .page-zboox-cloud header .menu ul li a,
+    .page-template-page-zboox-cloud header .menu ul li a { color: #fff; }
+    .page-zboox-cloud header .menu ul li a:hover,
+    .page-template-page-zboox-cloud header .menu ul li a:hover { color: #22dbd7; }
+    .page-zboox-cloud header .btn-open-menu span,
+    .page-template-page-zboox-cloud header .btn-open-menu span { background: #fff; }
