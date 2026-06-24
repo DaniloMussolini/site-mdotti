@@ -4,6 +4,17 @@
 
 <?php get_header(); ?>
 
+<style>
+/* Produtos & Serviços — cards soltos, última linha centralizada (resolve quantidade ímpar) */
+section.s-solutions main.container-full { background: transparent !important; display: flex !important; flex-wrap: wrap; justify-content: center; gap: 2.4rem; border-radius: 0; overflow: visible; }
+section.s-solutions main .box { flex: 0 1 calc(33.333% - 1.6rem); background: #fff; border: 1px solid #eceef5 !important; border-radius: 1.2rem; overflow: hidden; transition: transform .3s, box-shadow .3s; }
+section.s-solutions main .box:hover { transform: translateY(-0.5rem); box-shadow: 0 2.4rem 5rem rgba(31,28,48,0.1); }
+section.s-solutions main .box::before { border-radius: 1.2rem; }
+.slide-hero .asset-cloud { align-self: flex-start; }
+@media (max-width: 1080px) { section.s-solutions main .box { flex-basis: calc(50% - 1.2rem); } }
+@media (max-width: 680px)  { section.s-solutions main .box { flex-basis: 100%; } }
+</style>
+
 <section class="s-hero">
     <video src="<?php echo get_template_directory_uri() ?>/video/bg-mdotti-hero.mp4" autoplay loop playsinline muted></video>
     <div class="container">
@@ -24,6 +35,25 @@
                         <div class="asset">
                             <a href="<?php bloginfo('wpurl')?>/zboox/">
                                 <img src="<?php echo get_template_directory_uri() ?>/img/assets/asset-zboox.png" alt="ZBoox">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item-slide">
+                        <div class="text">
+                            <div class="icon" data-aos="zoom-in">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-data.svg" alt="Icon ZBoox Cloud">
+                            </div>
+                            <h1 class="title-slide">ZBoox Cloud</h1>
+                            <p>O armazenamento ZBoox agora na nuvem: acesse, compartilhe e colabore em seus projetos de qualquer lugar, com segurança e sem manter infraestrutura física.</p>
+                            <div class="cta">
+                                <a href="<?php bloginfo('wpurl')?>/zboox-cloud/" class="btn-primary purple">Saiba mais</a>
+                            </div>
+                        </div>
+                        <div class="asset asset-cloud">
+                            <a href="<?php bloginfo('wpurl')?>/zboox-cloud/">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/assets/zboox-cloud-logo.png" alt="ZBoox Cloud" style="margin: 10px 0px 30px;">
                             </a>
                         </div>
                     </div>
@@ -212,6 +242,14 @@
             </div>
             <h4>ZBoox</h4>
             <p>Nosso carro-chefe! Uma solução de armazenamento de alta performance, escalável e projetada para atender a qualquer demanda do setor audiovisual. O ZBoox permite a centralização de mídias e projetos, garantindo segurança, organização e flexibilidade para seu workflow, com a escalabilidade que sua produção precisa.</p>
+        </div>
+        <div class="box">
+            <a href="<?php bloginfo('wpurl')?>/zboox-cloud/"></a>
+            <div class="icon" data-aos="zoom-in">
+                <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-data.svg" alt="ZBoox Cloud">
+            </div>
+            <h4>ZBoox Cloud</h4>
+            <p>A confiabilidade do ZBoox agora na nuvem. Armazene, acesse e colabore em seus projetos de qualquer lugar — com segurança de nível profissional, subdomínio com a sua marca e expansão sob demanda, sem manter infraestrutura física própria.</p>
         </div>
         <div class="box">
             <a href="<?php bloginfo('wpurl')?>/workstation/"></a>
