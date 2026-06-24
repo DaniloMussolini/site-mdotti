@@ -114,6 +114,16 @@ add_action( 'wp_enqueue_scripts', function () {
         );
     }
 
+    // --- Página ZBoox Cloud ---
+    if ( is_page_template( 'page-zboox-cloud.php' ) ) {
+        wp_enqueue_style(
+            'mdotti-zboox-cloud',
+            $theme_uri . '/css/zboox-cloud.css',
+            array(),
+            filemtime( $theme_path . '/css/zboox-cloud.css' )
+        );
+    }
+
 }, 20 );
 
 ?>

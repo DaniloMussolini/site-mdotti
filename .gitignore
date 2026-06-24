@@ -55,6 +55,9 @@ wflogs/
 *.tar.gz
 *.bak
 
+# Pasta de trabalho para aplicar pacotes de atualização (zip do Claude Design)
+tmp/
+
 # =====================================================================
 #  IMPORTANTE
 # =====================================================================
