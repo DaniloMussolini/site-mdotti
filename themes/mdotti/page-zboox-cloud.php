@@ -246,7 +246,7 @@ get_header();
       <div class="tag">Corporativo</div>
       <div class="cap">100<small> TB</small></div>
       <div class="price">
-        <span class="val">R$ 4.500</span><span class="per">/mês</span>
+        <span class="val">R$ 6.000</span><span class="per">/mês</span>
         <span class="setup">Onboarding (setup inicial): R$ 1.300</span>
       </div>
       <ul class="specs">
@@ -254,7 +254,7 @@ get_header();
         <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8.5l3 3 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Upload/download ilimitado · 1 IP público</li>
         <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8.5l3 3 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>5 usuários via VPN</li>
         <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8.5l3 3 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Até 50 usuários de acesso web</li>
-        <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8.5l3 3 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Espaço adicional: +20 TB por R$ 900</li>
+        <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8.5l3 3 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Espaço adicional: +20 TB por R$ 1.200</li>
       </ul>
       <a href="#contato" class="btn-plan">Solicitar proposta</a>
     </div>
