@@ -46,7 +46,7 @@ $clientes = array(
 <div class="edt" id="edt">
 
   <!-- HERO -->
-  <section class="hero"><div class="wrap"><div class="grid">
+  <section class="hero"><div class="glow g1"></div><div class="glow g2"></div><div class="wrap"><div class="grid">
     <div class="txt">
       <span class="eyebrow">Storage para audiovisual</span>
       <h1>O servidor feito para <mark>produção de conteúdo</mark>.</h1>
@@ -153,6 +153,17 @@ $clientes = array(
 
 </div><!-- /.edt -->
 </div><!-- /.zbx -->
+
+<script>
+(function(){
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  var groups=['.hero .txt','.hero .visual','.intro .lead','.intro .pills','.sechead','.feats .c','.models .mrow','.pillars .row','.screens .carousel','.numbers .grid>div','.endcta .wrap'];
+  groups.forEach(function(sel){
+    document.querySelectorAll('.edt '+sel).forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=((i%4)*0.09)+'s';io.observe(el);});
+  });
+})();
+</script>
 
 <script>
 (function(){
