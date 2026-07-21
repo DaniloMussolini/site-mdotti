@@ -28,8 +28,18 @@
 
 get_header();
 $img = get_template_directory_uri() . '/img/assets';
+$logo = get_template_directory_uri() . '/img/logos';
 $core = 'https://mdotti.com/core/views/a9c5111cff/img';
 $store = 'https://mdotti.com/storage/2025/05';
+
+// Logos de clientes: [arquivo, hospedado_no_tema?]
+$clientes = array(
+  array('origolab',true),array('acelerados',false),array('band',true),array('bionica',false),array('boutique',false),
+  array('canal-rural',true),array('carbono-media',false),array('casablanca',true),array('catalunya',false),array('caze-tv',true),
+  array('centauro',true),array('chatrone',false),array('duo-2',false),array('etc',false),array('iguale',false),
+  array('maria-farinha',false),array('medialand',true),array('moonshot',true),array('new',false),array('o2-filmes',true),
+  array('sbt',true),array('sdvc',false),array('the-end',false),array('ufc',true),array('unisom',false),array('v8',true)
+);
 ?>
 
 <div class="zbx">
@@ -41,7 +51,7 @@ $store = 'https://mdotti.com/storage/2025/05';
       <span class="eyebrow">Storage para audiovisual</span>
       <h1>O servidor feito para <mark>produção de conteúdo</mark>.</h1>
       <p>O ZBoox é um storage desenvolvido especificamente para workflows audiovisuais — do ingest de grandes volumes de mídia à edição direta pela rede, com projetos centralizados e protegidos.</p>
-      <div class="cta"><a class="btn purple" href="#modelos">Conheça o ZBoox</a><a class="btn ghost-d" href="#modelos">Ver modelos</a></div>
+      <div class="cta"><a class="btn purple" href="#modelos">Ver modelos</a></div>
     </div>
     <div class="visual">
       <img class="main" src="<?php echo $core; ?>/assets/zboox-zh.png" alt="ZBoox ZH">
@@ -131,6 +141,12 @@ $store = 'https://mdotti.com/storage/2025/05';
     <div><strong>24/7</strong><span>monitoramento</span></div>
     <div><strong>+600</strong><span>clientes atendidos</span></div>
   </div></div></section>
+
+  <!-- CLIENTES -->
+  <section class="clients">
+    <div class="wrap"><div class="sechead"><span class="tag">Clientes</span><h2>Empresas que confiam no nosso trabalho</h2></div></div>
+    <div class="marquee"><div class="mtrack"><?php for ( $rep = 0; $rep < 2; $rep++ ) : foreach ( $clientes as $c ) : $base = $c[1] ? $logo : $core . '/logos'; ?><div class="lg"><img src="<?php echo $base . '/' . $c[0]; ?>.jpg" alt=""></div><?php endforeach; endfor; ?></div></div>
+  </section>
 
   <!-- CTA FINAL -->
   <section class="endcta"><div class="wrap"><h2>Alta performance começa com a escolha certa!</h2><p>Fale com nossos especialistas e encontre a solução ideal.</p><a class="btn purple" href="<?php echo esc_url( home_url( '/#contato' ) ); ?>">Entre em contato</a></div></section>
