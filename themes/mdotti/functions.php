@@ -124,6 +124,16 @@ add_action( 'wp_enqueue_scripts', function () {
         );
     }
 
+    // --- Página ZBoox (produto — redesign 2026) ---
+    if ( is_page_template( 'page-zboox.php' ) ) {
+        wp_enqueue_style(
+            'mdotti-zboox',
+            $theme_uri . '/css/zboox.css',
+            array(),
+            filemtime( $theme_path . '/css/zboox.css' )
+        );
+    }
+
 }, 20 );
 
 ?>

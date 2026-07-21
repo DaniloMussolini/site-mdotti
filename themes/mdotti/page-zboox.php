@@ -1,271 +1,144 @@
 <?php
-// Template name: Zboox
+/**
+ * Template Name: ZBoox
+ *
+ * Página do produto ZBoox (storage para o mercado audiovisual) — redesign 2026.
+ *
+ * Seções:
+ *   - Hero (texto + imagens ZH/Mini + chips)
+ *   - Intro "O que é o ZBoox" (texto do Wiki + pills)
+ *   - Recursos (4 cards)
+ *   - Modelos (ZBoox Mini + ZBoox ZH)
+ *   - Por que ZBoox (Flexibilidade / Robustez / Monitoramento 24x7)
+ *   - Interface de gerenciamento (carrossel de 8 telas, auto-rotação + setas)
+ *   - Painel de números
+ *   - CTA final
+ *
+ * Dependências (registradas em functions.php — ver functions-snippet.php):
+ *   - css/zboox.css
+ *
+ * Imagem hospedada no tema (/img/assets/):
+ *   monitoramento-slide9.png  (dashboard de monitoramento — incluída no pacote)
+ *
+ * As demais imagens (produtos, ícones, telas, pilares) apontam para os assets
+ * já publicados em produção (mdotti.com/core/... e mdotti.com/storage/...).
+ *
+ * @package mdotti
+ */
+
+get_header();
+$img = get_template_directory_uri() . '/img/assets';
+$core = 'https://mdotti.com/core/views/a9c5111cff/img';
+$store = 'https://mdotti.com/storage/2025/05';
 ?>
 
-<?php get_header(); ?>
+<div class="zbx">
+<div class="edt" id="edt">
 
-<section class="s-hero-zboox">
-    <iframe width="100%" height="100%"
-        src="https://www.youtube.com/embed/tn7P4uOelIk?autoplay=1&mute=1&loop=1&playlist=tn7P4uOelIk&controls=0&showinfo=0&modestbranding=1&rel=0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
-    <div class="container">
-        <div class="text" data-aos="fade">
-            <img src="<?php echo get_template_directory_uri() ?>/img/assets/logo-zboox.svg" alt="Icon Zboox">
-            <h1>Armazenamento seguro, escalável e de alta performance</h1>
-            <div class="cta">
-                <a href="#modelos" class="btn-primary purple">
-                    Conheça o ZBoox
-                </a>
-            </div>
-        </div>
+  <!-- HERO -->
+  <section class="hero"><div class="wrap"><div class="grid">
+    <div class="txt">
+      <span class="eyebrow">Storage para audiovisual</span>
+      <h1>O servidor feito para <mark>produção de conteúdo</mark>.</h1>
+      <p>O ZBoox é um storage desenvolvido especificamente para workflows audiovisuais — do ingest de grandes volumes de mídia à edição direta pela rede, com projetos centralizados e protegidos.</p>
+      <div class="cta"><a class="btn purple" href="#modelos">Conheça o ZBoox</a><a class="btn ghost-d" href="#modelos">Ver modelos</a></div>
     </div>
-</section>
-
-<section class="s-destaques-zboox">
-    <div class="container">
-        <div class="top">
-            <div class="title">
-                <h2>Comece pelos destaques.</h2>
-            </div>
-        </div>
-        <main>
-            <div class="box">
-                <div class="icon" data-aos="zoom-in">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-circles.svg" alt="Icon Circles">
-                </div>
-                <p>Edição simultânea de várias ilhas sem necessidade de cópias ou transferências de arquivos.</p>
-            </div>
-            <div class="box">
-                <div class="icon" data-aos="zoom-in">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-intersect.svg" alt="Icon Circles">
-                </div>
-                <p>Desenvolvido para centralizar e proteger seus projetos com alta performance e escalabilidade sob demanda.</p>
-            </div>
-            <div class="box">
-                <div class="icon" data-aos="zoom-in">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-lock.svg" alt="Icon Circles">
-                </div>
-                <p>Segurança da informação e flexibilidade total para se adaptar ao crescimento da sua produção.</p>
-            </div>
-            <div class="box">
-                <div class="icon" data-aos="zoom-in">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-joy.svg" alt="Icon Circles">
-                </div>
-                <p>Monitoramento 24x7, proporcionando total controle e confiabilidade no seu fluxo de trabalho.</p>
-            </div>
-        </main>
+    <div class="visual">
+      <img class="main" src="<?php echo $core; ?>/assets/zboox-zh.png" alt="ZBoox ZH">
+      <img class="mini" src="<?php echo $core; ?>/assets/zboox-mini.png" alt="ZBoox Mini">
+      <div class="chip c1"><strong>edit-in-place</strong><span>edição direta pela rede</span></div>
+      <div class="chip c2"><strong>Scale Out</strong><span>aumento dinâmico de espaço</span></div>
     </div>
-</section>
+  </div></div></section>
 
-<section class="s-models" id="modelos">
-    <div class="container">
-        <main>
-            <div class="left">
-                <div class="photo" data-aos="fade-down">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/assets/zboox-mini.png" alt="Zboox Mini">
-                </div>
-                <p>Tenha o mesmo formato de trabalho de grandes infraestruturas em um ambiente enxuto e sem complexidade. Com o ZBoox Mini você pode ter até 62TB de espaço útil em uma caixa de dimensões reduzidas, rodando o mesmo sistema dos irmãos maiores, com segurança e confiabilidade.</p>
-            </div>
-            <div class="right">
-                <div class="logo">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/assets/logo-zboox-mini.png" alt="Logo Zboox Mini">
-                </div>
-                <h2>Versátil e ergonômico</h2>
-                <ul>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-check-purple.svg" alt="Check">
-                        <span>Chassi customizado e ergonômico</span>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-check-purple.svg" alt="Check">
-                        <span>8 Baias Hot-Swap</span>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-check-purple.svg" alt="Check">
-                        <span>1Gb Base-T e 10Gb Base-T (Opcional)</span>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-check-purple.svg" alt="Check">
-                        <span>Até 82TB de espaço útil</span>
-                    </li>
-                </ul>
-            </div>
-        </main>
+  <!-- INTRO -->
+  <section class="intro"><div class="wrap"><div class="grid">
+    <div class="lead"><span class="tag">O que é o ZBoox</span><p>A base de armazenamento dos workflows audiovisuais da MDotti. Um servidor baseado em <b>Linux</b> com tecnologias robustas e consolidadas, que sustenta toda a cadeia de produção — <b>do ingest à finalização</b> — com segurança, performance e escala.</p></div>
+    <div class="pills"><span>Ingest de grandes volumes</span><span>Edit-in-place</span><span>Centralização segura</span><span>Múltiplos editores simultâneos</span><span>Monitorado pela MDotti</span></div>
+  </div></div></section>
+
+  <!-- RECURSOS -->
+  <section class="feats"><div class="wrap">
+    <div class="sechead"><span class="tag">Recursos</span><h2>Feito para o fluxo audiovisual</h2></div>
+    <div class="grid">
+      <div class="c"><div class="ic"><img src="<?php echo $core; ?>/icons/icon-circles.svg" width="24" alt=""></div><h3>Edit-in-place</h3><p>Múltiplos editores trabalham direto no storage pela rede, sem cópias ou transferências.</p></div>
+      <div class="c"><div class="ic"><img src="<?php echo $core; ?>/icons/icon-intersect.svg" width="24" alt=""></div><h3>Armazenamento centralizado</h3><p>Todos os projetos audiovisuais reunidos e protegidos, com controle de acesso por usuários e grupos.</p></div>
+      <div class="c"><div class="ic"><img src="<?php echo $core; ?>/icons/icon-lock.svg" width="24" alt=""></div><h3>Filesystem Moderno</h3><p>Proteção contra perda de dados, checksum e mecanismos de recuperação integrados.</p></div>
+      <div class="c"><div class="ic"><img src="<?php echo $core; ?>/icons/icon-joy.svg" width="24" alt=""></div><h3>Monitoramento ativo</h3><p>A MDotti acompanha desempenho, capacidade e eventos críticos para prevenir falhas.</p></div>
     </div>
-    <div class="container-full">
-        <main>
-            <div class="line"></div>
-        </main>
+  </div></section>
+
+  <!-- MODELOS -->
+  <section class="models" id="modelos"><div class="wrap">
+    <div class="sechead"><span class="tag">Modelos</span><h2>Uma linha para cada porte</h2></div>
+    <div class="cards">
+      <div class="card"><div class="head"><div class="ph"><img src="<?php echo $core; ?>/assets/zboox-mini.png" alt="ZBoox Mini"></div><div><div class="name">ZBoox Mini</div><h3>Compacto e versátil</h3><p>O mesmo formato das grandes infraestruturas em um ambiente enxuto e sem complexidade. Até 92TB úteis em uma caixa compacta, rodando o mesmo sistema dos irmãos maiores.</p></div></div><ul><li><b>·</b> Chassi customizado e ergonômico</li><li><b>·</b> 8 baias Hot-Swap</li><li><b>·</b> Dual 10Gb Base-T (Opcional SFP+)</li><li><b>·</b> Até 92TB de espaço útil</li></ul></div>
+      <div class="card"><div class="head"><div class="ph"><img src="<?php echo $core; ?>/assets/zboox-zh.png" alt="ZBoox ZH"></div><div><div class="name">ZBoox ZH</div><h3>Profissional e escalável</h3><p>Visando o melhor custo/benefício por espaço útil, a linha ZH consolida espaço e performance para demandas de médio à grande porte, permitindo a expansão do volume de forma dinâmica e prática.</p></div></div><ul><li><b>·</b> Chassi Rack 2/4U</li><li><b>·</b> Até <b class="n">1PB</b> de espaço útil em 4U</li><li><b>·</b> Portas 10/25/100Gb Base-T, SFP+ e QSFP</li><li><b>·</b> Fonte redundante</li><li class="hl"><b>★</b> Scale Out — expansão dinâmica</li></ul></div>
     </div>
-    <div class="container">
-        <main>
-            <div class="left">
-                <div class="photo" data-aos="fade-down">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/assets/zboox-zh.png" alt="Zboox ZH">
-                </div>
-                <p>Visando o melhor custo/benefício por espaço útil, a linha ZH consolida espaço e performance para demandas de médio à grande porte, permitindo a espanção do volume de forma dinâmica e prática.</p>
-            </div>
-            <div class="right">
-                <div class="logo">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/assets/logo-zboox-zh.png" alt="Logo Zboox ZH">
-                </div>
-                <h2>Espaço e performance</h2>
-                <ul>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-check-purple.svg" alt="Check">
-                        <span>Chassi Rack  2/4U</span>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-check-purple.svg" alt="Check">
-                        <span>Até 1PB de espaço útil em 4U</span>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-check-purple.svg" alt="Check">
-                        <span>Portas 10Gb Base-T e SFP+</span>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-check-purple.svg" alt="Check">
-                        <span>Fonte Redundante</span>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-check-purple.svg" alt="Check">
-                        <span>Scale Out</span>
-                    </li>
-                </ul>
-            </div>
-        </main>
+  </div></section>
+
+  <!-- POR QUE ZBOOX -->
+  <section class="pillars"><div class="wrap">
+    <div class="sechead"><span class="tag">Por que ZBoox</span><h2>Construído para não parar</h2></div>
+    <div class="row">
+      <div class="pic"><img src="<?php echo $store; ?>/flex-zboox.jpg" alt="Flexibilidade"></div>
+      <div class="txt"><span class="tag">Flexibilidade</span><h3>Compatível com o seu workflow</h3><p>Integra-se a diferentes fluxos de trabalho, sistemas operacionais (Windows, Linux e macOS) e softwares do mercado, como Adobe Premiere Pro, Avid Media Composer, DaVinci Resolve, entre outros.</p></div>
     </div>
-</section>
-
-<section class="s-numbers s-numbers-zboox">
-    <main class="container-full">
-        <div class="container">
-            <div class="big-numbers">
-                <strong data-aos="zoom-in"><?php the_field('numero_number_1') ?></strong>
-                <span><?php the_field('label_number_1') ?></span>
-            </div>
-            <div class="big-numbers">                
-                <strong data-aos="zoom-in"><?php the_field('numero_number_2') ?></strong>
-                <span><?php the_field('label_number_2') ?></span>
-            </div>
-            <div class="big-numbers">                
-                <strong data-aos="zoom-in"><?php the_field('numero_number_3') ?></strong>
-                <span><?php the_field('label_number_3') ?></span>
-            </div>
-            <div class="big-numbers">                
-                <strong data-aos="zoom-in"><?php the_field('numero_number_4') ?></strong>
-                <span><?php the_field('label_number_4') ?></span>
-            </div>
-        </div>
-    </main>
-</section>
-
-<section class="s-screens">
-    <div class="container">
-        <h5>Veja as telas de gerenciamento do sistema:</h5>
-        <div class="swiper slide-screens">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="thumb-screen">
-                        <a class="photo" data-aos="fade" href="<?php echo get_template_directory_uri() ?>/img/screens/screen1.jpg" data-lightbox="telas" data-title="Dashboard">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/screens/screen1.jpg" alt="Screen">
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="thumb-screen">
-                        <a class="photo" data-aos="fade" href="<?php echo get_template_directory_uri() ?>/img/screens/screen2.jpg" data-lightbox="telas" data-title="Dashboard">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/screens/screen2.jpg" alt="Screen">
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="thumb-screen">
-                        <a class="photo" data-aos="fade" href="<?php echo get_template_directory_uri() ?>/img/screens/screen3.jpg" data-lightbox="telas" data-title="Dashboard">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/screens/screen3.jpg" alt="Screen">
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="thumb-screen">
-                        <a class="photo" data-aos="fade" href="<?php echo get_template_directory_uri() ?>/img/screens/screen4.jpg" data-lightbox="telas" data-title="Dashboard">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/screens/screen4.jpg" alt="Screen">
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="thumb-screen">
-                        <a class="photo" data-aos="fade" href="<?php echo get_template_directory_uri() ?>/img/screens/screen5.jpg" data-lightbox="telas" data-title="Dashboard">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/screens/screen5.jpg" alt="Screen">
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="thumb-screen">
-                        <a class="photo" data-aos="fade" href="<?php echo get_template_directory_uri() ?>/img/screens/screen5.jpg" data-lightbox="telas" data-title="Dashboard">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/screens/screen5.jpg" alt="Screen">
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="thumb-screen">
-                        <a class="photo" data-aos="fade" href="<?php echo get_template_directory_uri() ?>/img/screens/screen7.jpg" data-lightbox="telas" data-title="Dashboard">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/screens/screen7.jpg" alt="Screen">
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="thumb-screen">
-                        <a class="photo" data-aos="fade" href="<?php echo get_template_directory_uri() ?>/img/screens/screen8.jpg" data-lightbox="telas" data-title="Dashboard">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/screens/screen8.jpg" alt="Screen">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="row rev">
+      <div class="pic"><img src="<?php echo $store; ?>/resources-zboox-5.jpg" alt="Robustez" style="object-fit:contain;background:#0e0d18"></div>
+      <div class="txt"><span class="tag">Robustez</span><h3>Estabilidade de ponta a ponta</h3><p>Arquitetura baseada em Linux, desenvolvida e customizada para oferecer estabilidade, confiabilidade e extrair a máxima performance do hardware.</p></div>
     </div>
-</section>
-
-<section class="s-sticky-resources">
-    <?php if( have_rows('carrossel_services') ): while ( have_rows('carrossel_services') ) : the_row(); ?>
-
-    <div class="block">
-        <div class="container">
-            <div class="text">
-                <h2><?php the_sub_field('titulo_carrossel') ?></h2>
-                <p><?php the_sub_field('descricao_carrossel') ?></p>
-            </div>
-            <div class="asset" data-aos="fade-up">
-                <img src="<?php the_sub_field('imagem_carrossel') ?>" alt="Zboox">
-            </div>
-        </div>
+    <div class="row">
+      <div class="pic full"><img src="<?php echo $img; ?>/monitoramento-slide9.png" alt="Dashboard de monitoramento do ZBoox"></div>
+      <div class="txt"><span class="tag">Monitoramento 24x7</span><h3>Supervisão contínua e proativa</h3><p>Acompanhamento em tempo real do desempenho, integridade e segurança do sistema. O monitoramento proativo identifica possíveis falhas, garantindo alta disponibilidade e minimizando riscos de downtime.</p></div>
     </div>
+  </div></section>
 
-    <?php endwhile; else : endif;?>
-</section>
+  <!-- INTERFACE DE GERENCIAMENTO -->
+  <section class="screens"><div class="wrap">
+    <div class="sechead"><span class="tag">Interface de gerenciamento</span><h2>Controle total do seu storage</h2></div>
+    <div class="carousel" id="scrCar">
+      <div class="track">
+        <?php for ( $s = 1; $s <= 8; $s++ ) : ?>
+        <figure><img src="<?php echo $core; ?>/screens/screen<?php echo $s; ?>.jpg" alt="Tela do ZBoox"></figure>
+        <?php endfor; ?>
+      </div>
+      <button class="nav prev" aria-label="Anterior">&lsaquo;</button>
+      <button class="nav next" aria-label="Próxima">&rsaquo;</button>
+      <div class="dots"></div>
+    </div>
+  </div></section>
 
-<?php include(TEMPLATEPATH .'/includes/clientes.php')?>
+  <!-- NÚMEROS -->
+  <section class="numbers"><div class="wrap"><div class="grid">
+    <div><strong>+1<em>PB</em></strong><span>espaço útil em 4U</span></div>
+    <div><strong style="font-size:45px">10/25/100<em>Gb</em></strong><span>conectividade base</span></div>
+    <div><strong>24/7</strong><span>monitoramento</span></div>
+    <div><strong>+600</strong><span>clientes atendidos</span></div>
+  </div></div></section>
 
-<section class="s-end">
-    <main class="container-full">
-        <video src="<?php echo get_template_directory_uri() ?>/video/bg-mdotti-hero.mp4" autoplay loop playsinline muted></video>
-        <div class="container">
-            <div class="text" data-aos="zoom-in">
-                <h5><?php the_title(); ?></h5>
-                <h2>Alta performance começa com a escolha certa!</h2>
-                <div class="cta">
-                    <a href="#contato" class="btn-primary purple">Entre em contato</a>
-                </div>
-            </div>
-        </div>
-    </main>
-</section>
+  <!-- CTA FINAL -->
+  <section class="endcta"><div class="wrap"><h2>Alta performance começa com a escolha certa!</h2><p>Fale com nossos especialistas e encontre a solução ideal.</p><a class="btn purple" href="<?php echo esc_url( home_url( '/#contato' ) ); ?>">Entre em contato</a></div></section>
 
-<?php include(TEMPLATEPATH .'/includes/contato.php')?>
+</div><!-- /.edt -->
+</div><!-- /.zbx -->
+
+<script>
+(function(){
+  var car=document.getElementById('scrCar');if(!car)return;
+  var track=car.querySelector('.track');
+  var slides=track.children.length;
+  var dotsWrap=car.querySelector('.dots');
+  var i=0,timer;
+  for(var d=0;d<slides;d++){(function(n){var b=document.createElement('button');if(n===0)b.className='on';b.addEventListener('click',function(){go(n);});dotsWrap.appendChild(b);})(d);}
+  var dots=dotsWrap.children;
+  function render(){track.style.transform='translateX(-'+(i*100)+'%)';for(var d=0;d<slides;d++)dots[d].classList.toggle('on',d===i);}
+  function go(n){i=(n+slides)%slides;render();reset();}
+  function reset(){clearInterval(timer);timer=setInterval(function(){go(i+1);},4500);}
+  car.querySelector('.prev').addEventListener('click',function(){go(i-1);});
+  car.querySelector('.next').addEventListener('click',function(){go(i+1);});
+  reset();
+})();
+</script>
 
 <?php get_footer(); ?>
