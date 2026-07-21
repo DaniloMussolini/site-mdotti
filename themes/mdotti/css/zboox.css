@@ -64,7 +64,7 @@
 .edt .models .cards{display:grid;grid-template-columns:1fr 1fr;gap:30px}
 .edt .models .card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -40px rgba(31,28,48,.4);border:1px solid #eceaf6}
 .edt .models .card .head{padding:40px 40px 30px;background:linear-gradient(160deg,var(--off-2),#fff);display:flex;gap:30px;align-items:center}
-.edt .models .card .head .ph{width:180px;flex:none;display:flex;align-items:center;justify-content:center}
+.edt .models .card .head .ph{width:auto;flex:none;display:flex;align-items:center;justify-content:center}
 .edt .models .card .head .ph img{max-height:180px;filter:drop-shadow(0 16px 30px rgba(40,29,97,.25))}
 .edt .models .card .head .name{font-family:"Host Grotesk";font-size:15px;font-weight:600;color:var(--purple);letter-spacing:1px;text-transform:uppercase}
 .edt .models .card .head h3{font-size:28px;color:var(--dark);font-weight:700;margin:6px 0 10px}
