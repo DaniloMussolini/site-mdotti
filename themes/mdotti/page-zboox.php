@@ -87,7 +87,7 @@ $store = 'https://mdotti.com/storage/2025/05';
   <section class="pillars"><div class="wrap">
     <div class="sechead"><span class="tag">Por que ZBoox</span><h2>Construído para não parar</h2></div>
     <div class="row">
-      <div class="pic"><img src="<?php echo $store; ?>/flex-zboox.jpg" alt="Flexibilidade"></div>
+      <div class="pic"><img src="<?php echo $img; ?>/flexibilidade-zboox.png" alt="Flexibilidade"></div>
       <div class="txt"><span class="tag">Flexibilidade</span><h3>Compatível com o seu workflow</h3><p>Integra-se a diferentes fluxos de trabalho, sistemas operacionais (Windows, Linux e macOS) e softwares do mercado, como Adobe Premiere Pro, Avid Media Composer, DaVinci Resolve, entre outros.</p></div>
     </div>
     <div class="row rev">
