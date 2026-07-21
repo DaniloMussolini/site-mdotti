@@ -98,6 +98,15 @@ $store = 'https://mdotti.com/storage/2025/05';
       <div class="pic full"><img src="<?php echo $img; ?>/monitoramento-slide9.png" alt="Dashboard de monitoramento do ZBoox"></div>
       <div class="txt"><span class="tag">Monitoramento 24x7</span><h3>Supervisão contínua e proativa</h3><p>Acompanhamento em tempo real do desempenho, integridade e segurança do sistema. O monitoramento proativo identifica possíveis falhas, garantindo alta disponibilidade e minimizando riscos de downtime.</p></div>
     </div>
+    <div class="row rev">
+      <div class="pic vid">
+        <video autoplay muted loop playsinline>
+          <source src="<?php echo $img; ?>/zboox-scaleout.webm" type="video/webm">
+          <source src="<?php echo $img; ?>/zboox-scaleout.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="txt"><span class="tag">Scale Out</span><h3>Aumente o espaço sem interromper</h3><p>Precisou de mais espaço? Basta adicionar um novo servidor ZBoox e o volume cresce de forma transparente, somando capacidade e performance ao conjunto — sem migração, sem parada e sem retrabalho.</p></div>
+    </div>
   </div></section>
 
   <!-- INTERFACE DE GERENCIAMENTO -->
