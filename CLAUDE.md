@@ -12,11 +12,17 @@ Este repositório contém a pasta `wp-content` do site da MDotti Tecnologia.
   - `themes/mdotti/css/workstation.css` (Página Workstation)
   - `themes/mdotti/style.css` (Meta do tema, versão e detalhes)
 
-Fora do código do site (git-ignored, sincronizados só pelo Nextcloud):
+Fora do código do site, mas **versionados** neste repo (o fluxo de publicação
+viaja com o código):
+- **`scripts/`** — `wp-post.sh` (publicação via REST API) e `.env.wp.example`.
+- **`.claude/skills/`** — skills do domínio (`redigir-artigo-blog`, `postar-blog`).
+
+Git-ignored, sincronizados só pelo Nextcloud:
 - **`blog/`** — conteúdo editorial do blog: `DIRETRIZES.md` (tom, estrutura, SEO)
   e `rascunhos/` (artigos em HTML; publicados vão para `rascunhos/postados/`).
-- **`scripts/`** — `wp-post.sh` (publicação via REST API) e `.env.wp` (credenciais).
-- **`.claude/`** — skills do domínio.
+- **`scripts/.env.wp`** — credenciais do Application Password. Nunca versionar:
+  para montar numa máquina nova, copiar de `.env.wp.example` e gerar um
+  Application Password no perfil do WordPress.
 
 ---
 
