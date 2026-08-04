@@ -12,6 +12,46 @@ Este repositório contém a pasta `wp-content` do site da MDotti Tecnologia.
   - `themes/mdotti/css/workstation.css` (Página Workstation)
   - `themes/mdotti/style.css` (Meta do tema, versão e detalhes)
 
+Fora do código do site (git-ignored, sincronizados só pelo Nextcloud):
+- **`blog/`** — conteúdo editorial do blog: `DIRETRIZES.md` (tom, estrutura, SEO)
+  e `rascunhos/` (artigos em HTML; publicados vão para `rascunhos/postados/`).
+- **`scripts/`** — `wp-post.sh` (publicação via REST API) e `.env.wp` (credenciais).
+- **`.claude/`** — skills do domínio.
+
+---
+
+## ✍️ Blog (mdotti.com/blog)
+
+O blog é parte do site, então **redação e publicação vivem aqui** — não em
+`redes-sociais/`. O ciclo completo roda em uma única sessão iniciada nesta pasta:
+
+| Etapa | Skill / ferramenta | Saída |
+|---|---|---|
+| 1. Redigir | `redigir-artigo-blog` | `blog/rascunhos/<slug>.html` (prévia + corpo p/ colar) |
+| 2. Checar fatos | `fact-checker` (global, em `~/.claude/skills/`) | fontes + correções registradas no cabeçalho do rascunho |
+| 3. Imagem destacada | `gerar-prompt-imagem` (compartilhada, em `.agents/`) | prompt p/ IA de imagem |
+| 4. Revisar | humano — Danilo lê o HTML do rascunho | aprovação |
+| 5. Publicar | `postar-blog` → `scripts/wp-post.sh` | post no WP + links público/edição |
+| 6. Arquivar | `postar-blog` | rascunho movido p/ `blog/rascunhos/postados/` |
+
+A **checagem de fatos é obrigatória** sempre que o artigo citar número, data,
+valor de mercado, nome de empresa ou declaração de terceiro. Roda depois de
+redigir e antes da sua revisão, e deixa rastro no bloco "NÃO COLAR" do rascunho
+(fontes, o que foi confirmado, o que foi corrigido). Artigo com `[CONFIRMAR]`
+pendente não vai ao ar.
+
+Regras editoriais obrigatórias (tom, SEO, sem travessões, sem emojis, grafia
+**ZBoox**) estão em [`blog/DIRETRIZES.md`](blog/DIRETRIZES.md). O tema usa **H3**
+nas seções do corpo, não H2.
+
+**Publicar é ação externa e irreversível.** O `postar-blog` usa `--status publish`
+por padrão porque a revisão acontece no arquivo do rascunho, antes do comando.
+Confirme o texto com o Danilo antes de disparar o `create`.
+
+> ⚠️ O conteúdo do blog **não é versionado neste repo** (`blog/` está no
+> `.gitignore`): o repositório carrega o código do tema, não os artigos. Os
+> artigos publicados vivem no banco do WordPress; os rascunhos, no Nextcloud.
+
 ---
 
 ## 🚀 Fluxo de Atualização (Git)

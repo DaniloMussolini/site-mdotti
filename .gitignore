@@ -58,6 +58,14 @@ wflogs/
 # Pasta de trabalho para aplicar pacotes de atualização (zip do Claude Design)
 tmp/
 
+# Credenciais do wp-post.sh (Application Password) — machine-local, fora do sync
+scripts/.env.wp
+
+# Conteúdo editorial do blog (diretrizes + rascunhos de artigos).
+# Não é código do site: os artigos publicados vivem no banco do WordPress e os
+# rascunhos sincronizam pelo Nextcloud. Ver seção "Blog" no CLAUDE.md.
+blog/
+
 # =====================================================================
 #  IMPORTANTE
 # =====================================================================
