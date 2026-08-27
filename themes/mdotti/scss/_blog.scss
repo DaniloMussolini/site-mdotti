@@ -380,6 +380,71 @@ section.s-article {
         iframe {
           max-width: 100%;
         }
+
+        // Tabelas do corpo do artigo. O ideal e envolver a tabela em
+        // .table-wrap, que garante a rolagem horizontal no mobile; sem o
+        // wrapper, a propria tabela rola (ver o responsive de 768px abaixo).
+        .table-wrap {
+          margin: 3.2rem 0;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+
+          table {
+            margin: 0;
+            min-width: 52rem;
+          }
+        }
+
+        table {
+          width: 100%;
+          margin: 3.2rem 0;
+          border-collapse: collapse;
+          border: 1px solid #f0f1f4;
+
+          th,
+          td {
+            padding: 1.6rem;
+            border-bottom: 1px solid #f0f1f4;
+            color: #8a9d98;
+            text-align: left;
+            vertical-align: top;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 150%;
+
+            strong,
+            b,
+            a {
+              color: #735ee0;
+            }
+          }
+
+          // Primeira coluna e rotulo de linha; as demais dividem o resto.
+          th:first-child,
+          td:first-child {
+            width: 20%;
+          }
+
+          thead {
+            th {
+              background: #f8f9fd;
+              border-bottom: 2px solid #735ee0;
+              color: #1f1c30;
+              font-weight: 500;
+            }
+          }
+
+          tbody {
+            tr {
+              &:last-child {
+                th,
+                td {
+                  border-bottom: none;
+                }
+              }
+            }
+          }
+        }
       }
     }
 
@@ -460,6 +525,31 @@ section.s-article {
 
   @include responsive(768px) {
     .container {
+      article {
+        .content {
+          // Sem .table-wrap, a propria tabela vira o container de rolagem.
+          table {
+            display: block;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            white-space: normal;
+          }
+
+          .table-wrap {
+            table {
+              display: table;
+              overflow-x: visible;
+            }
+          }
+
+          th,
+          td {
+            padding: 1.2rem;
+            font-size: 1.5rem;
+          }
+        }
+      }
+
       aside {
         grid-gap: 2.4rem;
       }
@@ -530,4 +620,4 @@ section.s-article {
       }
     }
   }
-}
+}

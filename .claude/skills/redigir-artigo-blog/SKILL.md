@@ -197,6 +197,24 @@ e como **fonte do conteúdo a colar no WordPress**. Estrutura obrigatória:
   paste. Um parágrafo vazio com `&nbsp;` sobrevive ao limpador do Gutenberg
   como bloco "Parágrafo" vazio e adiciona a altura de uma linha. Para mais
   espaço, repetir o `<p>&nbsp;</p>`.
+- **Toda tabela vai dentro de `<div class="table-wrap">`**, assim:
+
+  ```html
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th></th><th>Coluna A</th><th>Coluna B</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Rótulo</strong></td><td>...</td><td>...</td></tr>
+    </tbody>
+  </table>
+  </div>
+  ```
+
+  O tema estiliza `.content table` (borda, zebra de linhas, cabeçalho roxo) e
+  usa o `.table-wrap` como container de rolagem horizontal no mobile. Sem o
+  wrapper a tabela ainda rola, mas com o layout um pouco pior. Primeira coluna
+  é o rótulo da linha, em `<strong>`, e ocupa 20% da largura. Nada de `style`
+  inline: o estilo vive no tema (`scss/_blog.scss`).
 - O bloco de metadados no comentário HTML do topo é marcado como "NÃO COLAR"
   e contém: título, meta descrição, palavra-chave, slug, categoria, data,
   instruções de publicação, pendências `[CONFIRMAR]` e o **rastro da checagem
