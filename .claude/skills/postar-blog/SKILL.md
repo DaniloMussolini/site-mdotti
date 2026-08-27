@@ -198,6 +198,17 @@ curl -sS -X POST "$WP_BASE_URL/wp-json/wp/v2/posts/<ID>" \
 atualizá-lo. Se quiser garantir que o rascunho permaneça rascunho, inclua
 `"status":"draft"` no payload.
 
+## 9. Purgar o cache de página (obrigatório)
+
+O W3 Total Cache **não** invalida as páginas ao publicar um post. Sem purge, a
+home e o `/blog/` continuam servindo o HTML antigo e o artigo novo só aparece
+pela busca. Diagnóstico rápido: acrescentar qualquer query string à URL fura o
+cache; se o post aparece com `?x=1` e não aparece sem, é cache.
+
+Não dá para disparar pela REST API (o W3TC exige sessão de admin com nonce).
+Peça ao usuário: **WP-Admin → Performance → Purge All Caches**. Se houve deploy
+do tema junto, o purge vem **depois** dele.
+
 ## Erros comuns
 
 - **`whoami` retorna 401 com a senha certa:** o servidor pode estar removendo o
