@@ -28,7 +28,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/main.min.css">
+    <?php $mdotti_main_css = get_template_directory() . '/css/main.min.css'; ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/main.min.css?ver=<?php echo file_exists( $mdotti_main_css ) ? filemtime( $mdotti_main_css ) : ''; ?>">
 
     <title>
         <?php wp_title( '|', true, 'right' ); ?>
