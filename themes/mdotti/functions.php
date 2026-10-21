@@ -272,4 +272,39 @@ function mdotti_seo_meta_tags() {
 }
 add_action( 'wp_head', 'mdotti_seo_meta_tags', 1 );
 
+// =========================================================================
+// Cache de página: purge ao publicar
+// (O W3 Total Cache não invalida a home nem o /blog/ quando um artigo é
+//  publicado, então o post novo só aparecia pela busca ou com query string.
+//  O purge manual no WP-Admin exige sessão com nonce e não dá para fazer pela
+//  REST API, e um artigo agendado sai sem ninguém por perto. Por isso o
+//  próprio tema limpa o cache de página na virada de status.)
+// =========================================================================
+
+/**
+ * Limpa o cache de página quando um artigo entra ou sai do ar. Cobre a
+ * publicação direta e a virada de agendado (future) para publicado, que roda
+ * pelo cron do WordPress.
+ *
+ * @param string  $novo   Status novo.
+ * @param string  $antigo Status anterior.
+ * @param WP_Post $post   Post que mudou de status.
+ */
+function mdotti_purge_cache_ao_publicar( $novo, $antigo, $post ) {
+
+    if ( 'post' !== $post->post_type || $novo === $antigo ) {
+        return;
+    }
+
+    if ( 'publish' !== $novo && 'publish' !== $antigo ) {
+        return;
+    }
+
+    // Sem o W3 Total Cache ativo, não há o que limpar.
+    if ( function_exists( 'w3tc_pgcache_flush' ) ) {
+        w3tc_pgcache_flush();
+    }
+}
+add_action( 'transition_post_status', 'mdotti_purge_cache_ao_publicar', 10, 3 );
+
 ?>
