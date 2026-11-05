@@ -159,7 +159,7 @@ $img_leasing = get_field('imagem_leasing') ?: $base_url . '/2025/05/modelos-leas
           <svg viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 4 8-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 8h5v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h4>Previsibilidade financeira</h4>
-        <p>Parcelas fixas e planejadas. Você sabe exatamente quanto vai investir, sem surpresas no orçamento.</p>
+        <p>Parcelas planejadas, com reajuste pela inflação ou pelo IGP-M, e valor residual fixo desde a assinatura. Sem surpresas no orçamento.</p>
       </div>
       <div class="lw-item">
         <div class="lw-ico">
